@@ -1,0 +1,10 @@
+//  Коли ви вносите дані в змінну ВАЖЛИВA! послідовність:
+// 1.font-style, 2.font-weight, 3.font-size, 4.line-height
+// Якщо виникла ситуація коли деякий параметр не потрібно ставити => (null, 400, 18px, 21px), потрібно поставити null.
+
+@mixin family-vr($fst, $fw, $fsz, $lh) {
+  font-style: $fst;
+  font-weight: $fw;
+  font-size: $fsz;
+  line-height: $lh;
+}

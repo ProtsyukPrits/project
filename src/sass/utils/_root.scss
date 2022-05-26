@@ -1,0 +1,55 @@
+// Я поставив DM Sans, як домінуючий колір перебивати потрібно тільки де потрібно.
+// В інших випадках не ставьте тільки задавайте weight
+body {
+  font-family: $primery-font-family, sans-serif;
+}
+
+// body.modal-open {
+//   overflow: hidden;
+// }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+//   ====reset для UL========
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
