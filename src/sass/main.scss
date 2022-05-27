@@ -11,6 +11,9 @@
 // =======================
 @import './base/normalize';
 // =======================
+@import './components/container';
+@import './components/section';
+// =======================
 @import './components/about';
 @import './components/advantages';
 @import './components/contacts';
@@ -20,6 +23,4 @@
 @import './components/header';
 @import './components/hero';
 @import './components/products';
-@import './components/container';
-@import './components/section';
 @import './components/buttons';
