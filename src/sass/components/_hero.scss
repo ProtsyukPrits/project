@@ -1,1 +1,51 @@
+.hero {
+  background-color: #ffb8ca;
+  padding-top: 194px;
+  padding-bottom: 158px;
+}
 
+.hero__title {
+  margin-bottom: 20px;
+  width: 218px;
+
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1, 15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $text-color-secondary;
+  font-family: $secondary-font-family;
+}
+.hero__title-accent {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 96.5%;
+  text-transform: uppercase;
+
+  color: $text-color-accent;
+}
+.hero__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero__nav-item:not(:last-child) {
+  margin-right: 9px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__statistics-list {
+    display: none;
+  }
+}
+
+.hero__nav-link {
+}
+.hero__statistics-list {
+}
+.hero__statistics-column {
+}
+.hero__counter {
+}
+.hero__counter-title {
+}
