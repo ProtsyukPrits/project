@@ -2,4 +2,8 @@
   display: flex;
   justify-content: space-between;
   background-color: transparent;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
 }
