@@ -19,7 +19,9 @@ h6 {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -38,9 +40,6 @@ a {
 }
 
 //   ====reset для UL========
-.list {
-  list-style: none;
-}
 
 .visually-hidden {
   position: absolute;
