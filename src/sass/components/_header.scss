@@ -1,0 +1,24 @@
+.page-header__container {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 0;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.header__buy-btn {
+  display: none;
+}
+.menu-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+}
+.menu-icon {
+  fill: teal;
+}
