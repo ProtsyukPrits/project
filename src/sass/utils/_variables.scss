@@ -2,12 +2,48 @@
 $primery-font-family: 'DM Sans';
 $secondary-font-family: 'Titan One';
 
+
 // =============ANIMATION==============
 // Я зробив замість міксина змінну, яку можна буде перевикористовувати без проблем!
 $animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 // ==============COLORS================
+$text-color-primery: #000000;
+$text-color-secondery: #FFFFFF;
+$text-color-dark: #907E82;
+$text-color-accent: #D41443;
+$text-color-accent-light: #FFA5BA;
+// для форми, якщо знадобиться
+$text-color-placeholder: rgba(117, 117, 117, 0.5);
+
+// ==============Buttons-COLORS================
+$button-color: #FFFFFF;
+$button-color-hover: #ECEBEB;
+$button-color-accent: #D41443;
+$button-color-accent-hover: #C7133E;
+
+// ==============Networks-COLORS================
+$networks-color: #FEA5BB;
+$networks-color-hover: #D41443;
+
+// ==============Icons-COLORS==================
+$icon-color-accent: #D31342;
+$icon-color-accent-dark: #C7133E;
+$icon-color-accent-light: #FFB8CA;
+$icon-color-light: #D9D9D9;
 
 // ==============BACKGROUND-COLORS=============
+$bg-primery: #FFFFFF;
+$bg-dark: #E1E1E1;
+$bg-dark-mobile: #FAFAFA;
+$bg-accent-primery: #FFB8CA;
+$bg-accent-primery-light: #FFF5F6;
+$bg-accent-second: #F0D1A5;
+$bg-accent-third: #C2E297;
+
+// =============Border-COLORS======================
+$border-color-light: #E1E1E1;
+$border-color-accent: #E18298;
 
 // =============SHADOWS======================
+$shadow-card-contacts: 0px 8px 30px rgba(212, 20, 67, 0.1);
