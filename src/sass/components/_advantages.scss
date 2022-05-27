@@ -1,0 +1,48 @@
+.advantages {
+    @media screen and (min-width: 480px) {
+        background-color: #FFF5F6;
+      } 
+}
+
+.advantages-list {
+    @media screen and (min-width: 480px) {
+        padding-top: 24px;
+        padding-bottom: 64px;
+      }
+  
+}
+
+.advantages-list-item {
+    @media screen and (min-width: 480px) {
+        padding: 16px 0;
+      }
+  
+}
+
+.advatage-name {
+    @media screen and (min-width: 480px) {
+        font-family: 'Titan One';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 41px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #D41443;
+      }
+}
+
+.advantage-description {
+    @media screen and (min-width: 480px) {
+        font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 170%;
+/* or 20px */
+
+
+color: #000000;
+      }
+}
