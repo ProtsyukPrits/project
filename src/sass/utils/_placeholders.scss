@@ -14,6 +14,15 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
+
+    &::after {
+        display: inline-block;
+        margin-left: 13px;
+        content: '>';
+        vertical-align: -5%;
+        height: 10px;
+        width: 5px;
+    }
 }
 
 %button__secondary {
