@@ -12,3 +12,8 @@
 @mixin border($color) {
   border: 1px solad $color;
 }
+
+@mixin btn-color ($bg, $color) {
+  background-color: $bg;
+  color: $color;
+}
