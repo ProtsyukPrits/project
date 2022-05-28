@@ -62,7 +62,7 @@
     border-top: 1px solid $border-color-accent;
     &:last-child {
       border-bottom: 1px solid $border-color-accent;
- }
+    }
 
     &__link {
       padding-top: 11px;
@@ -83,5 +83,5 @@
         color: $text-color-accent;
       }
     }
-  
-
+  }
+}
