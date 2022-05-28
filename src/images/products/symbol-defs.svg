@@ -1,0 +1,9 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-dots_product" viewBox="0 0 139 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M85.368 16.028c0 8.84-7.166 16.006-16.006 16.006s-16.006-7.166-16.006-16.006c0-8.84 7.166-16.006 16.006-16.006s16.006 7.166 16.006 16.006z"></path>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M32.013 16.028c0 8.84-7.166 16.006-16.006 16.006s-16.006-7.166-16.006-16.006c0-8.84 7.166-16.006 16.006-16.006s16.006 7.166 16.006 16.006z"></path>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M138.722 16.028c0 8.84-7.166 16.006-16.006 16.006s-16.006-7.166-16.006-16.006c0-8.84 7.166-16.006 16.006-16.006s16.006 7.166 16.006 16.006z"></path>
+</symbol>
+</defs>
+</svg>

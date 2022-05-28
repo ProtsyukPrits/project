@@ -63,26 +63,25 @@
     &:last-child {
       border-bottom: 1px solid $border-color-accent;
     }
-  }
 
-  &__link {
-    padding-top: 11px;
-    padding-bottom: 11px;
-    @include family-vr(inherit, 700, 14px, 1.302);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
+    &__link {
+      padding-top: 11px;
+      padding-bottom: 11px;
+      @include family-vr(inherit, 700, 14px, 1.302);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
 
-    color: $text-color-secondary;
+      color: $text-color-secondary;
 
-    transition: color $animation;
+      transition: color $animation;
 
-    &:hover,
-    &:focus {
-      color: $text-color-accent;
+      &:hover,
+      &:focus {
+        color: $text-color-accent;
+      }
     }
-
   }
 }
