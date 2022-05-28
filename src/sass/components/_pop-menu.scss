@@ -6,6 +6,8 @@
   right: 0;
   padding-top: 60px;
 
+  transition: opacity $animation, transform $animation;
+
   @media screen and (min-width: 768px) {
     width: 254px;
     padding-top: 58px;
@@ -45,4 +47,5 @@
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  transform: translateX(255px);
 }
