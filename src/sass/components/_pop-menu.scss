@@ -1,0 +1,51 @@
+.popup-menu {
+  width: 250px;
+  height: 100vh;
+  background-color: $bg-menu;
+  position: fixed;
+  right: 0;
+  padding-top: 60px;
+
+  transition: opacity $animation, transform $animation;
+
+  @media screen and (min-width: 768px) {
+    width: 254px;
+    padding-top: 58px;
+  }
+
+  &__close-btn {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  &__buy-btn {
+    @extend %button__primary;
+    width: 209px;
+    border: none;
+    color: $text-color-accent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 19px;
+    background-color: $button-color;
+
+    transition: background-color $animation;
+    &:hover,
+    &:focus {
+      background-color: $button-color-hover;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 186px;
+    }
+  }
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transform: translateX(255px);
+}
