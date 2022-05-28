@@ -20,6 +20,10 @@
     &:focus {
         background-color: $button-color-hover;
     }
+
+    &::after {
+        background-image: url(../images/svg/button-icon.svg);
+    }
 }
 
 .button__primary--accent {
@@ -31,6 +35,10 @@
     &:hover,
     &:focus {
         background-color: $button-color-accent-hover;
+    }
+
+    &::after {
+        background-image: url(../images/svg/button-icon-white.svg);
     }
 }
 
