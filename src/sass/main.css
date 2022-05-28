@@ -1,0 +1,704 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #000000;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.button__primary--light, .button__primary--accent, .button__menu, .button__secondary--light, .button__secondary--accent {
+  display: inline-block;
+  font-family: inherit;
+  text-align: center;
+  border: 0;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button__primary--light, .button__primary--accent, .button__menu {
+  padding: 11px 40px;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+}
+
+.button__primary--light::after, .button__primary--accent::after, .button__menu::after {
+  display: inline-block;
+  margin-left: 13px;
+  content: '>';
+  vertical-align: -5%;
+  height: 10px;
+  width: 5px;
+}
+
+.button__secondary--light, .button__secondary--accent {
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 1280px) {
+  .button__secondary--light, .button__secondary--accent {
+    padding: 11px 23px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+/**
+ * /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize
+ *
+ * @format
+ */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+}
+
+/*
+Sections
+========
+*/
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  margin: 0;
+  /* 1 */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+.container {
+  width: 480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .advantages-list {
+    padding-top: 24px;
+    padding-bottom: 64px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .advantages-list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .advatage-name {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .advantage-description {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    /* or 20px */
+    color: #000000;
+  }
+}
+
+.gallery__grid {
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2px;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: (1fr)[9];
+      grid-template-rows: repeat(9, 1fr);
+}
+
+.gallery {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF5F6), color-stop(50%, #FFF5F6), color-stop(0, #FFFFFF));
+  background-image: linear-gradient(180deg, #FFF5F6, #FFF5F6 50%, #FFFFFF 0);
+}
+
+.gallery__thumb {
+  min-width: 40px;
+  height: auto;
+  border-radius: 15%;
+  overflow: hidden;
+}
+
+.gallery__grid--item-1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 7;
+}
+
+.gallery__grid--item-2 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.gallery__grid--item-3 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.gallery__grid--item-4 {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 7;
+}
+
+.gallery__grid--item-5 {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+  grid-row-end: 10;
+}
+
+.gallery__grid--item-6 {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 6;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.gallery__grid--item-7 {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 6;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.gallery__grid--item-8 {
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+  grid-column-end: 7;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+.gallery__grid--item-9 {
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+  grid-column-end: 7;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+.gallery__grid--item-10 {
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 8;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 7;
+}
+
+.page-header__container {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 0;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.header__buy-btn {
+  display: none;
+}
+
+.menu-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-icon {
+  fill: teal;
+}
+
+.hero {
+  background-color: #ffb8ca;
+  padding-top: 194px;
+  padding-bottom: 158px;
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  width: 218px;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1, 15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: "Titan One";
+}
+
+.hero__title-accent {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 96.5%;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.hero__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hero__nav-item:not(:last-child) {
+  margin-right: 9px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__statistics-list {
+    display: none;
+  }
+}
+
+.button__primary--light {
+  background-color: #FFFFFF;
+  color: #D41443;
+}
+
+.button__primary--light:hover, .button__primary--light:focus {
+  background-color: #ECEBEB;
+}
+
+.button__primary--accent {
+  background-color: #D41443;
+  color: #FFFFFF;
+}
+
+.button__primary--accent:hover, .button__primary--accent:focus {
+  background-color: #C7133E;
+}
+
+.button__menu {
+  background-color: #FFFFFF;
+  color: #D41443;
+  min-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .button__menu {
+    min-width: 186px;
+  }
+}
+
+.button__menu:hover, .button__menu:focus {
+  background-color: #ECEBEB;
+}
+
+.button__secondary--light {
+  background-color: #D41443;
+  color: #FFFFFF;
+}
+
+.button__secondary--light:hover, .button__secondary--light:focus {
+  background-color: #C7133E;
+}
+
+.button__secondary--accent {
+  background-color: #FFFFFF;
+  color: #D41443;
+}
+
+.button__secondary--accent:hover, .button__secondary--accent:focus {
+  background-color: #ECEBEB;
+}
+/*# sourceMappingURL=main.css.map */

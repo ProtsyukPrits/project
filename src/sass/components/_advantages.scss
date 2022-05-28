@@ -1,20 +1,22 @@
-.advantages {
-    @media screen and (min-width: 480px) {
-        background-color: #FFF5F6;
-      } 
-}
-
 .advantages-list {
     @media screen and (min-width: 480px) {
         padding-top: 24px;
         padding-bottom: 64px;
+        display: flex;
+    flex-direction: column;
+    gap: 16px;
       }
   
 }
 
 .advantages-list-item {
     @media screen and (min-width: 480px) {
-        padding: 16px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 16px;
       }
   
 }
