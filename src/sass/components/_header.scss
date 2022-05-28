@@ -53,7 +53,8 @@
 .header__logo {
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     flex-grow: 2;
-
+  }
+}
 .site-nav {
   &__item {
     padding-left: 20px;
@@ -81,6 +82,5 @@
     &:focus {
       color: $text-color-accent;
     }
-
   }
 }
