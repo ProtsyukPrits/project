@@ -54,15 +54,15 @@
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     flex-grow: 2;
   }
+}
 
-  .site-nav {
-    &__item {
-      padding-left: 20px;
-      border-top: 1px solid $border-color-accent;
-      &:last-child {
-        border-bottom: 1px solid $border-color-accent;
-      }
-    }
+.site-nav {
+  &__item {
+    padding-left: 20px;
+    border-top: 1px solid $border-color-accent;
+    &:last-child {
+      border-bottom: 1px solid $border-color-accent;
+ }
 
     &__link {
       padding-top: 11px;
@@ -83,5 +83,5 @@
         color: $text-color-accent;
       }
     }
-  }
-}
+  
+
