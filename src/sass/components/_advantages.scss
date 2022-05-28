@@ -4,6 +4,40 @@
     &:not(:last-child) {
         margin-bottom: 32px;
     }
+
+    &:first-child::before {
+        margin-bottom: 16px;
+        display: inline-block;
+        content: '';
+        width: 33px;
+        height: 50px;
+        background-image: url(../images/svg/advatages/icon-liter.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &:nth-child(2n):before {
+        margin-bottom: 16px;
+        display: inline-block;
+        content: '';
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/svg/advatages/icon-kg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    &:last-child::before {
+        margin-bottom: 16px;
+        display: inline-block;
+        content: '';
+        width: 44px;
+        height: 50px;
+        background-image: url(../images/svg/advatages/icon-hurt.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 .advantages__caption {
