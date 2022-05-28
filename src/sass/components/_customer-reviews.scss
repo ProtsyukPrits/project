@@ -1,0 +1,73 @@
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer__article {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.customer__img {
+    margin: auto;
+}
+
+.customer__content {
+    display: block;
+    padding: 43px 0px;
+}
+
+.customer__container {
+    background-color: #fafafa;
+    display: block;
+    width: auto;
+    height: 308px;
+}
+
+.customer__about {
+    font-family: 'DM Sans';
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    height: 100%;
+    width: 157px;
+    margin: auto;
+    font-size: 12px;
+    line-height: 31px;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url('../images/customer-reviews/quotes.svg');
+        height: 40px;
+        width: 60px;
+    }
+}
+
+.customer__name::before {
+    display: block;
+    content: '';
+    height: 4px;
+    width: 32px;
+    margin: auto;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-image: url('../images/customer-reviews/group.svg');
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    line-height: 20px;
+    background-color: #d9d9d9;
+    margin-top: 50px;
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet:focus {
+    background-color: #c7133e;
+}
