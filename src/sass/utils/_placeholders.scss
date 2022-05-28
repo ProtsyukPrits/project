@@ -17,12 +17,19 @@
 
     &::after {
         display: inline-block;
+
+        content: '';
+        height: 8px;
+        width: 4.8px;
         margin-left: 13px;
-        content: '>';
-        vertical-align: -5%;
-        height: 10px;
-        width: 5px;
+        background-image: url(../images/svg/button-icon.svg);
+        background-size: cover;
+        background-position: content;
+        background-repeat: no-repeat;
+
     }
+
+
 }
 
 %button__secondary {
