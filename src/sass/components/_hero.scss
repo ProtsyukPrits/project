@@ -1,7 +1,85 @@
 .hero {
-  background-color: #ffb8ca;
   padding-top: 194px;
   padding-bottom: 158px;
+
+  background-color: #ffb8ca;
+
+  overflow: hidden;
+}
+
+.hero__container {
+  position: relative;
+
+  // outline: 2px solid black;
+}
+
+.hero__ellipse {
+  position: absolute;
+  bottom: -83px;
+  right: -20%;
+
+  width: 346px;
+  height: 344px;
+  border-radius: 100%;
+
+  background: $bg-hero-ellipse;
+  box-shadow: $shadow-ellipse-hero;
+
+  animation: pulsing 10s infinite;
+
+  @keyframes pulsing {
+    15% {
+      transform: scale(1, 1);
+    }
+
+    17% {
+      transform: scale(1.1, 1);
+    }
+
+    18% {
+      transform: scale(1, 1);
+    }
+
+    22% {
+      transform: scale(1, 1);
+    }
+
+    24% {
+      transform: scale(1, 1.1);
+    }
+
+    25% {
+      transform: scale(1, 1);
+    }
+
+    31% {
+      transform: scale(1, 1);
+    }
+
+    33% {
+      transform: scale(1.2, 1.1);
+    }
+
+    34% {
+      transform: scale(1, 1);
+    }
+
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+.hero__img {
+  position: absolute;
+  bottom: -158px;
+  right: 10%;
+}
+
+.hero__column {
+  position: relative;
+
+  // outline: 2px solid rgb(45, 11, 198);
 }
 
 .hero__title {
@@ -10,42 +88,44 @@
 
   font-size: 26px;
   font-weight: 400;
-  line-height: 1, 15;
+  line-height: 115%;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
   color: $text-color-secondary;
   font-family: $secondary-font-family;
 }
+
 .hero__title-accent {
   font-size: 48px;
-  font-weight: 400;
   line-height: 96.5%;
-  text-transform: uppercase;
 
   color: $text-color-accent;
 }
-.hero__nav-list {
+
+.hero__nav {
   display: flex;
   flex-wrap: wrap;
 }
+
 .hero__nav-item:not(:last-child) {
   margin-right: 9px;
 }
 
-@media screen and (max-width: 767px) {
-  .hero__statistics-list {
+.hero__nav-link {
+}
+
+.hero__statistics {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
 
-.hero__nav-link {
-}
-.hero__statistics-list {
-}
 .hero__statistics-column {
 }
+
 .hero__counter {
 }
+
 .hero__counter-title {
 }
