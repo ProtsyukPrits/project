@@ -1,0 +1,58 @@
+.about {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 75%;
+  background-color: $bg-accent-primary-light;
+  background-image: url(../images/about/milk.png);
+}
+
+.about__title {
+  font-family: $secondary-font-family;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.16;
+  margin-bottom: 15px;
+  color: $text-color-accent-light;
+}
+
+.about__subtitle {
+  font-family: $secondary-font-family;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 34px;
+  line-height: 1.14;
+  margin-bottom: 32px;
+  color: $text-color-accent;
+}
+
+.about__image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.about__wrap {
+  margin-bottom: 20px;
+  padding-right: 20%;
+}
+
+.about__content {
+  font-family: $primary-font-family;
+  color: $text-color-dark;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.about__content--description-1 {
+  margin-bottom: 40px;
+  color: $text-color-primary;
+}
+
+.about__content--description-2 {
+  margin-bottom: 20px;
+}
+
