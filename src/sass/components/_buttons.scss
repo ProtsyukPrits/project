@@ -1,0 +1,76 @@
+// ===========Класи кнопок, які потібно вставити у розмітку===========
+
+// <button class="button__primary--light">Buy now</button> --------Header
+// <button class="button__menu">Buy now</button> ---------Header Menu
+// <button class="button__secondary--light">Products</button> --------Hero
+// <button class="button__secondary--accent">How it’s made?</button> --------Hero
+// <button class="button__primary--light">Read more</button> --------About
+// <button class="button__primary--accent">Our Locations</button> --------Contacts
+// <button class="button__primary--light">Franchise</button> --------Contacts
+
+// Для надання кнопкам зовнішньої геометрії використовувати класи-мікси або модифікатори, що залежать від назви секції або блоку. Наприклад hero__button, contact__button, button__menu--after.
+
+.button__primary--light {
+    @extend %button;
+    @extend %button__primary;
+
+    @include btn-color($button-color, $button-color-accent);
+
+    &:hover,
+    &:focus {
+        background-color: $button-color-hover;
+    }
+}
+
+.button__primary--accent {
+    @extend %button;
+    @extend %button__primary;
+
+    @include btn-color($button-color-accent, $button-color);
+
+    &:hover,
+    &:focus {
+        background-color: $button-color-accent-hover;
+    }
+}
+
+
+
+.button__menu {
+    @extend %button;
+    @extend %button__primary;
+    @include btn-color($button-color, $button-color-accent);
+
+    min-width: 100%;
+
+    @media screen and (min-width: 768px) {
+        min-width: 186px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $button-color-hover;
+    }
+}
+
+.button__secondary--light {
+    @extend %button;
+    @extend %button__secondary;
+    @include btn-color($button-color-accent, $button-color);
+
+    &:hover,
+    &:focus {
+        background-color: $button-color-accent-hover;
+    }
+}
+
+.button__secondary--accent {
+    @extend %button;
+    @extend %button__secondary;
+    @include btn-color($button-color, $button-color-accent);
+
+    &:hover,
+    &:focus {
+        background-color: $button-color-hover;
+    }
+}

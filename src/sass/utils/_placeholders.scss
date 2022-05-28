@@ -1,0 +1,40 @@
+%button {
+    display: inline-block;
+    font-family: inherit;
+    text-align: center;
+    border: 0;
+
+    transition: background-color $animation;
+}
+
+%button__primary {
+    padding: 11px 40px;
+    border-radius: 22px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    &::after {
+        display: inline-block;
+        margin-left: 13px;
+        content: '>';
+        vertical-align: -5%;
+        height: 10px;
+        width: 5px;
+    }
+}
+
+%button__secondary {
+    padding: 7px 13px;
+    border-radius: 20px;
+
+    font-size: 8px;
+    line-height: 1.25;
+
+    @media screen and (min-width: 1280px) {
+        padding: 11px 23px;
+        font-size: 14px;
+        line-height: 1.29;
+    }
+}

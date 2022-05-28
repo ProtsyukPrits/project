@@ -1,5 +1,4 @@
 .page-header__container {
-  width: 480px;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -10,16 +9,78 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
 }
 .header__buy-btn {
+  width: 160px;
+  padding-left: 37px;
+  padding-right: 37px;
   display: none;
+  @extend %button__primary;
+  border: none;
+  color: $text-color-accent;
+  background-color: $button-color;
+  transition: background-color $animation;
+
+  &::after {
+    margin-left: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $button-color-hover;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 .menu-btn {
   border: none;
   background-color: transparent;
   padding: 0;
   display: flex;
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
 }
-.menu-icon {
+.menu-btn__icon {
   fill: teal;
+}
+
+.header__logo {
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    flex-grow: 2;
+
+.site-nav {
+  &__item {
+    padding-left: 20px;
+    border-top: 1px solid $border-color-accent;
+    &:last-child {
+      border-bottom: 1px solid $border-color-accent;
+    }
+  }
+
+  &__link {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    @include family-vr(inherit, 700, 14px, 1.302);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: $text-color-secondary;
+
+    transition: color $animation;
+
+    &:hover,
+    &:focus {
+      color: $text-color-accent;
+    }
+
+  }
 }
