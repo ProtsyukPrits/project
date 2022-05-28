@@ -1,0 +1,26 @@
+.popup-menu {
+  width: 250px;
+  height: 100vh;
+  background-color: $bg-menu;
+  position: fixed;
+  right: 0;
+  padding-top: 60px;
+
+  &__close-btn {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  &__buy-btn {
+    @extend %button__primary;
+    border: none;
+    color: $text-color-accent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 19px;
+  }
+}
