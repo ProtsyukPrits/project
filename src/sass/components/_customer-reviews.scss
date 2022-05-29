@@ -1,3 +1,7 @@
+.swiper-wrapper {
+    margin-bottom: 16px;
+}
+
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -12,39 +16,40 @@
 
 .customer__img {
     margin: auto;
-}
-
-.customer__content {
-    display: block;
-    padding: 43px 0px;
+    margin-bottom: 32px;
 }
 
 .customer__container {
-    background-color: #fafafa;
     display: block;
     width: auto;
-    height: 308px;
+    height: auto;
+    padding: 43px 50px 17px;
+    margin-bottom: 33px;
+    background-color: $bg-dark-mobile;
 }
 
 .customer__about {
-    font-family: 'DM Sans';
-    display: block;
-    font-style: normal;
+    position: relative;
     font-weight: 500;
     height: 100%;
     width: 157px;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 12px;
-    line-height: 31px;
+    font-size: 12px;
+    line-height: 2.58;
 
-    &::before {
+    &:before {
+        position: absolute;
+        display: inline;
         content: '';
-        display: block;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-image: url('../images/customer-reviews/quotes.svg');
         height: 40px;
-        width: 60px;
+        width: 54px;
+        top: -13px;
+        left: -12px;
+        background-image: url('../images/customer-reviews/quotes.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 }
 
@@ -55,8 +60,10 @@
     width: 32px;
     margin: auto;
     margin-bottom: 16px;
+
+    background-image: url('../images/customer-reviews/dots.svg');
     background-repeat: no-repeat;
-    background-image: url('../images/customer-reviews/group.svg');
+    background-size: contain;
 }
 
 .swiper-pagination-bullet {
@@ -67,7 +74,24 @@
     margin-top: 50px;
 }
 
-.swiper-pagination-bullet:hover,
-.swiper-pagination-bullet:focus {
-    background-color: #c7133e;
+.swiper-pagination-bullet:hover {
+    width: 12.4px;
+    height: 12px;
+    border-radius: 1%;
+    background-color: transparent;
+    background-image: url('../images/customer-reviews/home.svg');
+}
+
+.swiper-pagination-bullet-active {
+    width: 12.4px;
+    height: 12px;
+    border-radius: 1%;
+    background-color: transparent;
+    background-image: url('../images/customer-reviews/home.svg');
+}
+
+.swiper-pagination {
+    position: relative;
+    top: 16px;
+    margin-bottom: 16px;
 }
