@@ -31,11 +31,10 @@
 }
 
 .contacts__place {
+    margin-bottom: 20px;
     padding: 1px 23px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 186%;
-
+    display: inline-block;
+    @include family-vr(null, 500, 12px, null);
     text-align: center;
     letter-spacing: 0.04em;
     color: $text-color-secondary;
@@ -43,36 +42,24 @@
     border-radius: 4px;
     &--foodtruck{ 
         padding: 1px 26px;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 186%;
-    
-        text-align: center;
-        letter-spacing: 0.04em;
-        color: $text-color-secondary;
         background-color: $bg-accent-third;
-        border-radius: 4px;}
+       }
 }
 
 .contacts__box{
-    
     border-bottom: 1px solid $border-color-light;
     padding-bottom: 24px;
 }
 .contacts__caption {
     margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 186%;
+    @include family-vr(normal, 500, 12px, 186%);
     letter-spacing: 0.04em;
     color: $text-color-primary;
     margin-top: 20px;
 }
 
 .contacts__text{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
+    @include family-vr(null, 500, 12px, 18px);
     color: $text-color-dark;
 }
 .schedule {
@@ -85,11 +72,7 @@
     margin-bottom: 8px;
 }
 .schedule__text{
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 186%;
+    @include family-vr(null, 500, 12px, 186%);
     color: $text-color-primary;
     &--color{ 
         color:$text-color-accent-light;}
@@ -99,10 +82,7 @@
     padding-top: 24px;
 }
 .callback__link{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-
+    @include family-vr(null, 500, 12px, 18px);
     color: $text-color-dark;
 
 }
