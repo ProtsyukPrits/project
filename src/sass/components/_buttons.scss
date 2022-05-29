@@ -42,22 +42,26 @@
     }
 }
 
+.button__header {
 
+    @media screen and (max-width: 767.99px) {
+        display: none;
+    }
+}
 
 .button__menu {
-    @extend %button;
-    @extend %button__primary;
-    @include btn-color($button-color, $button-color-accent);
+    margin-bottom: 20px;
 
-    min-width: 100%;
+    @media screen and (max-width: 767.99px) {
+        min-width: 210px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     @media screen and (min-width: 768px) {
         min-width: 186px;
-    }
-
-    &:hover,
-    &:focus {
-        background-color: $button-color-hover;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
