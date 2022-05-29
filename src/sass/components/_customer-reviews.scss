@@ -1,3 +1,7 @@
+.swiper-wrapper {
+    margin-bottom: 16px;
+}
+
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -12,36 +16,41 @@
 
 .customer__img {
     margin: auto;
-}
-
-.customer__content {
-    display: block;
-    padding: 43px 0px;
+    margin-bottom: 32px;
 }
 
 .customer__container {
-    background-color: #fafafa;
     display: block;
     width: auto;
     height: auto;
-    background-repeat: no-repeat;
-    background-image: url('../images/customer-reviews/quotes.svg');
-    background-position: 40% 12%;
+    padding: 43px 50px 17px;
+    margin-bottom: 33px;
+    background-color: $bg-dark-mobile;
 }
 
 .customer__about {
-    font-family: 'DM Sans';
-    display: block;
-    font-style: normal;
+    position: relative;
     font-weight: 500;
     height: 100%;
     width: 157px;
-    margin: auto;
-    // padding-top: 48px;
-    padding: 48px 0 16px;
-    margin-bottom: 16px;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 12px;
-    line-height: 31px;
+    font-size: 12px;
+    line-height: 2.58;
+
+    &:before {
+        position: absolute;
+        display: inline;
+        content: '';
+        height: 40px;
+        width: 54px;
+        top: -13px;
+        left: -12px;
+        background-image: url('../images/customer-reviews/quotes.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
 .customer__name::before {
@@ -51,8 +60,10 @@
     width: 32px;
     margin: auto;
     margin-bottom: 16px;
-    background-repeat: no-repeat;
+
     background-image: url('../images/customer-reviews/dots.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .swiper-pagination-bullet {
@@ -77,4 +88,10 @@
     border-radius: 1%;
     background-color: transparent;
     background-image: url('../images/customer-reviews/home.svg');
+}
+
+.swiper-pagination {
+    position: relative;
+    top: 16px;
+    margin-bottom: 16px;
 }
