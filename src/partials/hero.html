@@ -3,19 +3,28 @@
     <div class="hero__ellipse"></div>
     <picture>
       <source
+        srcset="/images/hero/ice-cream-tablet.webp 1x, /images/hero/ice-cream-tablet@2x.webp 2x"
+        type="image/webp"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="/images/hero/ice-cream-tablet.png 1x, /images/hero/ice-cream-tablet@2x.png 2x"
+        type="image/png"
+        media="(min-width: 768px)"
+      />
+      <source
         srcset="/images/hero/ice-cream-mobile.webp 1x, /images/hero/ice-cream-mobile@2x.webp 2x"
         type="image/webp"
-        media="(max-width: 480px)"
+        media="(max-width: 767px)"
       />
       <source
         srcset="/images/hero/ice-cream-mobile.png 1x, /images/hero/ice-cream-mobile@2x.png 2x"
         type="image/png"
-        media="(max-width: 480px)"
+        media="(max-width: 767px)"
       />
       <img
         src="/images/hero/ice-cream-mobile.png"
         alt="ice cream"
-        width="171"
         type="image/jpeg"
         class="hero__img"
       />
@@ -30,18 +39,20 @@
           <a href="#products" title="Products" class="button__secondary--light">Products</a>
         </li>
         <li class="hero__nav-item">
-          <a href="#about" title="How it’s made?" class="button__secondary--accent">How it’s made?</a>
+          <a href="#about" title="How it’s made?" class="button__secondary--accent"
+            >How it’s made?</a
+          >
         </li>
       </ul>
     </div>
     <ul class="hero__statistics">
       <li class="hero__statistics-column">
         <p class="hero__counter">16</p>
-        <p class="hero__counter-title">cafes</p>
+        <p class="hero__counter-text">cafes</p>
       </li>
       <li class="hero__statistics-column">
         <p class="hero__counter">23</p>
-        <p class="hero__counter-title">food trucks</p>
+        <p class="hero__counter-text">food trucks</p>
       </li>
     </ul>
   </div>

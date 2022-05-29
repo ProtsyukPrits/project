@@ -2,15 +2,22 @@
   padding-top: 194px;
   padding-bottom: 158px;
 
-  background-color: #ffb8ca;
+  background-color: $bg-accent-primary;
 
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 102px;
+    padding-bottom: 56px;
+  }
+
+  outline: 2px solid blue;
 }
 
 .hero__container {
   position: relative;
 
-  // outline: 2px solid black;
+  outline: 2px solid black;
 }
 
 .hero__ellipse {
@@ -26,6 +33,14 @@
   box-shadow: $shadow-ellipse-hero;
 
   animation: pulsing 10s infinite;
+
+  @media screen and (min-width: 768px) {
+    bottom: -16px;
+    right: 185px;
+
+    width: 335px;
+    height: 333px;
+  }
 
   @keyframes pulsing {
     15% {
@@ -74,6 +89,11 @@
   position: absolute;
   bottom: -158px;
   right: 10%;
+
+  @media screen and (min-width: 768px) {
+    bottom: -56px;
+    right: 303px;
+  }
 }
 
 .hero__column {
@@ -84,7 +104,7 @@
 
 .hero__title {
   margin-bottom: 20px;
-  width: 218px;
+  width: 162px;
 
   font-size: 26px;
   font-weight: 400;
@@ -94,6 +114,11 @@
 
   color: $text-color-secondary;
   font-family: $secondary-font-family;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 114%;
+  }
 }
 
 .hero__title-accent {
@@ -101,6 +126,11 @@
   line-height: 96.5%;
 
   color: $text-color-accent;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 90.5%;
+  }
 }
 
 .hero__nav {
@@ -109,20 +139,65 @@
 }
 
 .hero__nav-item:not(:last-child) {
-  margin-right: 9px;
+  margin-right: 8px;
 }
 
 .hero__statistics {
-  @media screen and (max-width: 767px) {
-    display: none;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: -10px;
+    right: 0;
+
+    display: inline-block;
   }
 }
 
 .hero__statistics-column {
+  // background: radial-gradient(circle 16px at top right $bg-primary, $bg-primary);
+  // background-image: radial-gradient(circle at 87.5% 12.5%, $bg-primary 0, $bg-primary 100%);
+
+  // background-image: url('./image/svg/hero.svg');
+  // background-image: url('data:image/svg+xml;utf8, /src/images/svg/hero.svg#icon-ellipse-tablet');
+
+  // <symbol id="icon-ellipse-desktop" viewBox="0 0 32 32">
+  // <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+  // </symbol>
+  // background-image: url('/src/images/svg/hero.svg');
+}
+
+// .hero__statistics-column:before {
+//   content: '';
+//   display: inline-block;
+//   width: 16px;
+//   height: 16px;
+
+//   background: url(/src/images/svg/hero.svg) no-repeat 0 0;
+// }
+
+.hero__nav-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .hero__counter {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 114%;
+  letter-spacing: 0.04em;
+  text-align: right;
+  text-transform: uppercase;
+
+  color: $text-color-accent;
+  font-family: $secondary-font-family;
 }
 
-.hero__counter-title {
+.hero__counter-text {
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1, 25%;
+  letter-spacing: 0.04em;
+  text-align: right;
+
+  color: $text-color-secondary;
 }
