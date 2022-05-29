@@ -394,64 +394,89 @@ summary {
   }
 }
 
-@media screen and (min-width: 480px) {
+.advantages {
+  background-color: #FFF5F6;
+}
+
+.advantages__item {
+  width: 230px;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.advantages__item:first-child::before {
+  margin-bottom: 16px;
+  display: inline-block;
+  content: '';
+  width: 33px;
+  height: 50px;
+  background-image: url(../images/advantages/png/icon-liter.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.advantages__item:nth-child(2n):before {
+  margin-bottom: 16px;
+  display: inline-block;
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/advantages/png/icon-kg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.advantages__item:last-child::before {
+  margin-bottom: 16px;
+  display: inline-block;
+  content: '';
+  width: 44px;
+  height: 50px;
+  background-image: url(../images/advantages/png/icon-hurt.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.advantages__caption {
+  margin-bottom: 13px;
+  color: #D41443;
+  font-family: "Titan One";
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.67;
+}
+
+@media screen and (min-width: 768px) {
   .advantages-list {
-    padding-top: 24px;
-    padding-bottom: 64px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 16px;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .advantages-list-item {
+@media screen and (min-width: 1200px) {
+  .advantages-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    gap: 16px;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .advatage-name {
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 41px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #D41443;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .advantage-description {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 170%;
-    /* or 20px */
-    color: #000000;
+@media screen and (min-width: 768px) {
+  .advantages-list-item {
+    width: 25%;
   }
 }
 
