@@ -2,7 +2,7 @@
    
     background-image: linear-gradient(
         to bottom,
-        $bg-dark-mobile 25%,
+        $bg-primary 25%,
         $bg-accent-primary-light 25%,
         $bg-accent-primary-light 100%,
       
@@ -14,19 +14,29 @@
     margin-bottom: 32px;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        margin-bottom: 40px
+    }
 }
 .contacts__items{
     padding: 40px 32px;
-    margin-bottom: 20px;
+    
     border-radius: 24px;
     background: $bg-primary;
     box-shadow: $shadow-card-contacts;
-    
-    &:last-child {
-        margin-bottom: 0;
-      }
-      @media screen and (max-width: 480px) {
-        width: 280px;
+    @media screen and (min-width: 768px) {
+        width: 224px    
+        }
+  
+    &:not(:last-child){
+        @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+        width: 280px;}
+        @media screen and (min-width: 768px) {
+            margin-right: 32px;
+            width: 224px    
+            }
       }
 }
 
@@ -93,8 +103,22 @@
     justify-content: center;
     align-items: center;
     &-item:not(:last-child){
+        @media screen and (max-width: 767px) {
         margin-bottom: 10px;
     }
+    @media screen and (min-width: 768px) {
+        margin-right: 14px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        }
+  
+}
+.button_contacts{
+    @media screen and (max-width: 479.99px) {
+    padding: 11px 0;
+    min-width: 162px;}
 }
 
 
