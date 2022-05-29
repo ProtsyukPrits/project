@@ -5,6 +5,7 @@
   position: fixed;
   right: 0;
   padding-top: 60px;
+  z-index: 999;
 
   transition: opacity $animation, transform $animation;
 
@@ -20,27 +21,6 @@
     position: absolute;
     top: 20px;
     right: 20px;
-  }
-  &__buy-btn {
-    @extend %button__primary;
-    width: 209px;
-    border: none;
-    color: $text-color-accent;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 19px;
-    background-color: $button-color;
-
-    transition: background-color $animation;
-    &:hover,
-    &:focus {
-      background-color: $button-color-hover;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 186px;
-    }
   }
 }
 .is-hidden {
