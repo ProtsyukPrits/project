@@ -13,6 +13,7 @@
 .customer__img {
     margin-left: auto;
     margin-right: auto;
+    width: auto;
 }
 
 .customer__content {
@@ -46,7 +47,6 @@
         padding: 32px 105px;
         margin-bottom: 16px;
     }
-
 }
 
 .customer__about {
@@ -107,7 +107,6 @@
         width: 750px;
         font-size: 16px;
         line-height: 1.88;
-
     }
 }
 
@@ -160,7 +159,7 @@
 .swiper-pagination-bullet-active {
     width: 12.4px;
     height: 12px;
-    border-radius: 1%;
+    border-radius: 0;
     background-color: transparent;
     background-image: url('../images/customer-reviews/home.svg');
 }
@@ -176,7 +175,6 @@
 
     @media screen and (min-width: 1280px) {
         top: 32px;
-        margin-bottom: 0;
+        margin-bottom: 16px;
     }
-
 }
