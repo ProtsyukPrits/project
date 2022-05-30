@@ -25,12 +25,18 @@
     border-radius: 24px;
     background: $bg-primary;
     box-shadow: $shadow-card-contacts;
+    @media screen and (max-width: 767px) { 
+        width: 280px;
+    } 
     @media screen and (min-width: 768px) {
         width: 224px    
         }
-    @media screen and (max-width: 767px) { 
-        width: 280px;
-    }   
+        @media screen and (min-width: 1280px) {
+            width: 395px;
+            padding: 40px 40px; 
+            
+            }
+      
     &:not(:last-child){
         @media screen and (max-width: 767px) {
         margin-bottom: 20px;
@@ -52,6 +58,10 @@
     color: $text-color-secondary;
     background-color: $bg-accent-second;
     @include family-vr(null, 500, 12px, null);
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+        @include family-vr(null, 500, 16px, 186%); 
+        }
     &--foodtruck{ 
         padding: 1px 26px;
         background-color: $bg-accent-third;
@@ -61,42 +71,80 @@
 .contacts__box{
     padding-bottom: 24px;
     border-bottom: 1px solid $border-color-light;
-    
+    @media screen and (min-width: 768px) {
+        padding-bottom: 32px;   
+    }
 }
 .contacts__caption {
-    margin-top: 20px;
-    margin-bottom: 8px;
+
     letter-spacing: 0.04em;
     @include family-vr(normal, 500, 12px, 186%);
     color: $text-color-primary;
-    
+    @media screen and (min-width: 768px) {
+        @include family-vr(null, 500, 14px, 186%); 
+        }
+        @media screen and (min-width: 1280px) {
+            @include family-vr(null, 500, 16px, 186%); 
+            }    
 }
 
 .contacts__text{
+    margin-top: 8px;
     @include family-vr(null, 500, 12px, 18px);
     color: $text-color-dark;
+    @media screen and (min-width: 768px) and (max-width: 1279.99px){
+        margin-top: 12px;
+        @include family-vr(null, 500, 14px, 166%); 
+        }
+    @media screen and (min-width: 1280px) {
+        max-width: 243px;
+        @include family-vr(null, 500, 16px, 183%); 
+        }     
 }
 .schedule {
-    padding-top: 20px;
+    padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid $border-color-light;
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+        padding-bottom: 32px;   
+    }
 }
 .schedule__list--margin{
     margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 12px; 
+    }
 }
 .schedule__text{
     @include family-vr(null, 500, 12px, 186%);
     color: $text-color-primary;
+    @media screen and (min-width: 768px) {
+        @include family-vr(null, 500, 14px, 186%);
+        }
+        @media screen and (min-width: 1280px) {
+            @include family-vr(null, 500, 16px, 186%);
+            }
     &--color{ 
         color:$text-color-accent-light;}
+
 }
  
 .callback{
     padding-top: 24px;
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+    }
 }
 .callback__link{
     @include family-vr(null, 500, 12px, 18px);
     color: $text-color-dark;
+    @media screen and (min-width: 768px) {
+        @include family-vr(null, 500, 14px, 183%); 
+        }
+    @media screen and (min-width: 1280px) {
+        @include family-vr(null, 500, 16px, 183%); 
+        }
 }
 
 .contacts__btn{
@@ -104,6 +152,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        }
     &-item:not(:last-child){
         @media screen and (max-width: 767px) {
         margin-bottom: 10px;
@@ -112,15 +163,14 @@
         margin-right: 14px;
         }
     }
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-        }
+   
   
 }
 .button_contacts{
     @media screen and (max-width: 479.99px) {
     padding: 11px 0;
     min-width: 162px;}
+   
 }
 
 
