@@ -11,7 +11,7 @@
 }
 
 .section.products {
-  @media screen and (max-width: 779.98px) {
+  @media screen and (max-width: 767.98px) {
     padding-top: 80px;
   }
 
@@ -27,19 +27,19 @@
 }
 
 .section.advantages {
-  @media screen and (max-width: 479.98px) {
-    padding-bottom: 20px;
+  @media screen and (max-width: 767.98px) {
+    padding-top: 0;
   }
 }
 
 .section.customer {
-  @media screen and (max-width: 779.98px) {
+  @media screen and (max-width: 767.98px) {
     padding-bottom: 0px;
   }
 }
 
 .section.contacts {
-  @media screen and (max-width: 779.98px) {
+  @media screen and (max-width: 767.98px) {
     padding-top: 48px;
     padding-bottom: 48px;
   }
