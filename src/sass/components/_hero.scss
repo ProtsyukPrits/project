@@ -1,7 +1,4 @@
 .hero {
-  max-width: 768px;
-  margin: 0 auto;
-
   padding-top: 194px;
   padding-bottom: 158px;
 
@@ -10,13 +7,11 @@
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
-    max-width: 1280px;
     padding-top: 102px;
     padding-bottom: 56px;
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1600px;
     padding-top: 147px;
     padding-bottom: 60px;
   }
@@ -153,12 +148,12 @@
   position: relative;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 20px;
+    margin-bottom: 61px;
   }
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 40px;
-  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 108px;
+  }  
 }
 
 .hero__title {
@@ -208,14 +203,6 @@
 .hero__nav {
   display: flex;
   flex-wrap: wrap;
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 61px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 108px;
-  }
 }
 
 .hero__nav-link:not(:last-child) {
@@ -340,6 +327,8 @@
   font-family: $secondary-font-family;
 
   @media screen and (min-width: 1280px) {
+    margin-bottom: 2px;
+
     font-size: 46px;
     line-height: 115%;
   }
