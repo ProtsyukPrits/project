@@ -11,17 +11,20 @@
 }
 
 .customer__img {
-    margin: auto;
-    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customer__content {
+    padding-top: 32px;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 20px;
+        padding-top: 20px;
     }
 
     @media screen and (min-width: 1280px) {
-        margin-bottom: 16px;
+        padding-top: 16px;
     }
-
 }
 
 .customer__container {
