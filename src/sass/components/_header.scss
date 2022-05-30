@@ -80,7 +80,8 @@
     transition: color $animation;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &.current {
       color: $text-color-accent;
     }
   }
