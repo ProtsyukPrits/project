@@ -24,10 +24,9 @@
 
 .about {
   background-color: $bg-accent-primary-light;
-  padding-top: 40px;
 
   @media screen and (min-width: 768px){
-    padding-top: 20px;
+    padding: 20px 0 0 0;
   }
 
 }
