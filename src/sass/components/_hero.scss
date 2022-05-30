@@ -85,7 +85,7 @@
   }
 }
 
-.hero__img {
+.hero__ice-cream-img {
   position: absolute;
   bottom: -158px;
   right: 10%;
@@ -93,6 +93,30 @@
   @media screen and (min-width: 768px) {
     bottom: -56px;
     right: 303px;
+  }
+}
+
+.hero__so-tasty-img {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: -56px;
+    right: 32px;
+  }
+}
+
+.hero__bio-eco-img {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: -40px;
+    left: 32px;
   }
 }
 
@@ -136,10 +160,52 @@
 .hero__nav {
   display: flex;
   flex-wrap: wrap;
+
+  margin-bottom: 61px;
 }
 
 .hero__nav-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.hero__article {
+  position: relative;
+
+  left: 152px;
+}
+
+.hero__article-text {
+  width: 114px;
+  height: 48px;
+
+  margin-bottom: 7px;
+
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 150%;
+
+  color: $text-color-secondary;
+
+  overflow: hidden;
+
+  outline: 2px solid red;
+}
+
+.hero__article-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background-color: $bg-primary;
+}
+
+.hero__article-icon {
+  fill: $icon-color-accent;
 }
 
 .hero__statistics {
@@ -148,33 +214,16 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     top: -10px;
-    right: 0;
+    right: 32px;
 
     display: inline-block;
   }
 }
 
 .hero__statistics-column {
-  // background: radial-gradient(circle 16px at top right $bg-primary, $bg-primary);
-  // background-image: radial-gradient(circle at 87.5% 12.5%, $bg-primary 0, $bg-primary 100%);
-
-  // background-image: url('./image/svg/hero.svg');
-  // background-image: url('data:image/svg+xml;utf8, /src/images/svg/hero.svg#icon-ellipse-tablet');
-
-  // <symbol id="icon-ellipse-desktop" viewBox="0 0 32 32">
-  // <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
-  // </symbol>
-  // background-image: url('/src/images/svg/hero.svg');
+  background: url('/images/svg/counter-icon-tablet.svg') no-repeat top right;
+  // background: url('../../images/svg/counter-icon-desktop.svg') no-repeat top right;
 }
-
-// .hero__statistics-column:before {
-//   content: '';
-//   display: inline-block;
-//   width: 16px;
-//   height: 16px;
-
-//   background: url(/src/images/svg/hero.svg) no-repeat 0 0;
-// }
 
 .hero__nav-item:not(:last-child) {
   margin-bottom: 16px;
