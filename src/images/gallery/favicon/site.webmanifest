@@ -1,0 +1,19 @@
+{
+    "name": "Ice Cream",
+    "short_name": "Ice Cream",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png"
+            
+            
+        },
+        {
+            "src": "/android-chrome-512x512.png"
+           
+           
+        }
+    ],
+    "theme_color": "#d41443",
+    "background_color": "#d41443",
+    "display": "standalone"
+}
