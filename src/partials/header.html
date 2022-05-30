@@ -2,23 +2,45 @@
   <div class="container page-header__container">
     <a href="./index.html" class="logo header__logo">
       <img
-        srcset="./images/header/logo.png 1x, ./images/header/logo@2x.png 2x"
+        srcset="
+          ./images/header/logo.webp    1x,
+          ./images/header/logo@2x.webp 2x,
+          ./images/header/logo.png     1x,
+          ./images/header/logo@2x.png  2x
+        "
         src="./images/header/logo.png"
         alt="company logo"
-        width="199px"
-        height="50px"
       />
     </a>
-    <button type="button" class="menu-btn btn" data-modal-open>
+    <button type="button" class="menu-btn btn" data-menu-open>
       <svg width="20px" height="12px">
         <use href="./images/svg/svg_set.svg#icon-burger" class="menu-btn__icon"></use>
       </svg>
     </button>
+    <nav class="site-nav header__site-nav">
+      <ul class="site-nav__list header-site-nav__list">
+        <li class="header-site-nav__item">
+          <a href="#hero" class="site-nav__link header-site-nav__link">Home</a>
+        </li>
+        <li class="header-site-nav__item">
+          <a href="#advantages" class="site-nav__link header-site-nav__link">About us</a>
+        </li>
+        <li class="header-site-nav__item">
+          <a href="#about" class="site-nav__link header-site-nav__link">How it's made?</a>
+        </li>
+        <li class="header-site-nav__item">
+          <a href="#products" class="site-nav__link header-site-nav__link">Our products</a>
+        </li>
+        <li class="header-site-nav__item">
+          <a href="#contacts" class="site-nav__link header-site-nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
     <button type="button" class="button__primary--light button__header">Buy now</button>
   </div>
 
-  <div class="popup-menu is-hidden" data-modal>
-    <button type="button" class="close-btn popup-menu__close-btn" data-modal-close>
+  <div class="popup-menu is-hidden" data-menu>
+    <button type="button" class="close-btn popup-menu__close-btn" data-menu-close>
       <svg width="14px" height="14px">
         <use href="./images/svg/svg_set.svg#icon-close" class="close-btn__icon"></use>
       </svg>
@@ -34,10 +56,9 @@
         <li class="site-nav__item"><a href="#about" class="site-nav__link">How it's made?</a></li>
         <li class="site-nav__item"><a href="#products" class="site-nav__link">Our products</a></li>
         <li class="site-nav__item">
-          <a href="#contacts" class="site-nav__link" data-modal-close>Contact</a>
+          <a href="#contacts" class="site-nav__link">Contact</a>
         </li>
       </ul>
     </nav>
   </div>
 </header>
-

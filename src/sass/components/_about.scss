@@ -1,9 +1,32 @@
-.about {
+.about-inner {
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-y: 75%;
+
+  @media screen and (max-width: 767.99px) {
+    max-width: 100vw;
+    background-position-y: 534px;
+    background-image: url(../images/about/milk.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/about/milk.png);
+    }
+  }
+}
+
+.about {
   background-color: $bg-accent-primary-light;
-  background-image: url(../images/about/milk.png);
+  padding-top: 40px;
+}
+
+.about__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
 }
 
 .about__title {
@@ -36,7 +59,12 @@
 
 .about__wrap {
   margin-bottom: 20px;
-  padding-right: 20%;
+  max-width: 220px;
+
+  @media screen and (min-width: 480px)and (max-width: 767.99px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .about__content {
@@ -56,3 +84,9 @@
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767.99px) {
+  .about__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,5 +1,9 @@
 .products {
-	margin-left: auto;
+	padding-top: 80px;
+
+	@media screen and (min-width: 1280px) {
+		padding-top: 60px;
+	}
 }
 
 .products__natural {
@@ -85,26 +89,6 @@
 	}
 }
 
-.products__picture {
-	display: flex;
-	justify-content: center;
-	position: absolute;
-	top: -140px;
-
-	@media screen and(max-width: 768px) {
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	@media screen and(min-width: 768px) {
-		top: -138px;
-	}
-
-	@media screen and(min-width: 1280px) {
-		top: -261px;
-	}
-
-}
 
 .products__block-title {
 	display: block;
