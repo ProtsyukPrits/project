@@ -59,3 +59,20 @@
     font-size: 12px;
     line-height: 1.67;
 }
+
+.advantages-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+      }
+  
+}
+
+.advantages-list-item {
+    @media screen and (min-width: 768px) {
+        width: 25%
+      }
+}
