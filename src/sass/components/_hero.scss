@@ -1,4 +1,7 @@
 .hero {
+  max-width: 768px;
+  margin: 0 auto;
+
   padding-top: 194px;
   padding-bottom: 158px;
 
@@ -7,22 +10,20 @@
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
+    max-width: 1280px;
     padding-top: 102px;
     padding-bottom: 56px;
   }
 
   @media screen and (min-width: 1280px) {
+    max-width: 1600px;
     padding-top: 147px;
     padding-bottom: 60px;
   }
-
-  outline: 2px solid blue;
 }
 
 .hero__container {
   position: relative;
-
-  outline: 2px solid black;
 }
 
 .hero__ellipse {
@@ -32,7 +33,7 @@
 
   width: 346px;
   height: 344px;
-  border-radius: 100%;
+  border-radius: 50%;
 
   background: $bg-hero-ellipse;
   box-shadow: $shadow-ellipse-hero;
@@ -126,7 +127,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-    position: absolute;
     bottom: -84px;
     right: 16px;
   }
@@ -144,7 +144,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-    position: absolute;
     bottom: -24px;
     left: 16px;
   }
@@ -153,12 +152,18 @@
 .hero__column {
   position: relative;
 
-  // outline: 2px solid rgb(45, 11, 198);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
 }
 
 .hero__title {
+  width: 218px;
   margin-bottom: 20px;
-  width: 162px;
 
   font-size: 26px;
   font-weight: 400;
@@ -170,6 +175,7 @@
   font-family: $secondary-font-family;
 
   @media screen and (min-width: 768px) {
+    width: 162px;
     font-size: 22px;
     line-height: 114%;
   }
@@ -203,14 +209,16 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-bottom: 61px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 61px;
+  }
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 108px;
   }
 }
 
-.hero__nav-item:not(:last-child) {
+.hero__nav-link:not(:last-child) {
   margin-right: 8px;
 
   @media screen and (min-width: 1280px) {
@@ -219,9 +227,15 @@
 }
 
 .hero__article {
-  position: relative;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-  left: 152px;
+  @media screen and (min-width: 768px) {
+    position: relative;
+
+    left: 152px;
+  }
 
   @media screen and (min-width: 1280px) {
     left: 215px;
@@ -238,10 +252,6 @@
   line-height: 150%;
 
   color: $text-color-secondary;
-
-  overflow: hidden;
-
-  outline: 2px solid red;
 
   @media screen and (min-width: 1280px) {
     width: 200px;
@@ -289,9 +299,6 @@
     position: absolute;
     top: -10px;
     right: 32px;
-
-    display: inline-block;
-    // overflow: visible;
   }
 
   @media screen and (min-width: 1280px) {
@@ -300,10 +307,10 @@
   }
 }
 
-.hero__statistics-column {
-  @media screen and (min-width: 768px) {
-    background: url('/images/svg/counter-icon-tablet.svg') no-repeat top -4px right -18px;
-  }
+.hero__statistics-meta {
+  background: url('/images/svg/counter-icon-tablet.svg') no-repeat top right;
+  padding-top: 2px;
+  padding-right: 10px;
 
   @media screen and (min-width: 1280px) {
     background: url('/images/svg/counter-icon-desktop.svg') no-repeat top right;
@@ -313,9 +320,8 @@
   }
 }
 
-.hero__statistics-column:not(:last-child) {
-  @media screen and (min-width: 768px) {
-  }
+.hero__statistics-meta:not(:last-child) {
+  margin-bottom: 16px;
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 15px;
@@ -332,8 +338,6 @@
 
   color: $text-color-accent;
   font-family: $secondary-font-family;
-
-  // overflow: visible;
 
   @media screen and (min-width: 1280px) {
     font-size: 46px;
