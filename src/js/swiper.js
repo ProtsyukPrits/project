@@ -4,7 +4,7 @@ new Swiper('.swiper', {
         clickable:true,
     },
 
-    speed: 800,
+    speed: 1000,
 
     effect: 'flip',
 
