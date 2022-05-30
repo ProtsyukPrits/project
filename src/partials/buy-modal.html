@@ -1,32 +1,50 @@
-<div class="backdrop">
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button type="button" class="modal__close-btn close-btn">
-      <svg class="close-btn__icon" width="11px" height="11px">
-        <use href=""></use>
+    <button type="button" class="modal__close-btn close-btn" data-modal-close>
+      <svg width="14px" height="14px">
+        <use href="./images/svg/svg_set.svg#icon-close" class="modal__close-btn-icon"></use>
       </svg>
     </button>
     <h2 class="modal__heading">Please fill out the form in order to finalize your order</h2>
     <form class="contact-form">
       <div class="contact-form__form-field">
+        <input
+          type="text"
+          name="user-name"
+          class="contact-form__text-field"
+          id="user-name"
+          placeholder=" "
+        />
         <label for="user-name" class="contact-form__label"> Name </label>
-        <input type="text" name="user-name" class="contact-form__text-field" id="user-name" />
       </div>
       <div class="contact-form__form-field">
-        <label for="user-tel" class="contact-form__label">Телефон</label>
-        <input type="tel" name="user-tel" class="contact-form__text-field" id="user-tel" />
+        <input
+          type="tel"
+          name="user-tel"
+          class="contact-form__text-field"
+          id="user-tel"
+          placeholder=" "
+        />
+        <label for="user-tel" class="contact-form__label">Phone number</label>
       </div>
       <div class="contact-form__form-field">
-        <label for="user-email" class="contact-form__label">Почта</label>
-        <input type="email" name="user-email" class="contact-form__text-field" id="user-email" />
+        <input
+          type="email"
+          name="user-email"
+          class="contact-form__text-field"
+          id="user-email"
+          placeholder=" "
+        />
+        <label for="user-email" class="contact-form__label">Email</label>
       </div>
       <div class="contact-form__form-area">
-        <label for="user-comment" class="contact-form__label">Комментарий</label>
         <textarea
           class="contact-form__comment"
           id="user-comment"
           name="user-comment"
-          placeholder="Введите текст"
+          placeholder=" "
         ></textarea>
+        <label for="user-comment" class="contact-form__label">Comment</label>
       </div>
       <div class="contact-form__form-field">
         <label class="contact-form__label-agreement">
@@ -36,16 +54,18 @@
             class="contact-form__checkbox visually-hidden"
           />
           <svg class="contact-form__icon-checkbox" width="16px" height="15px">
-            <use href=""></use>
+            <use href="./images/svg/svg_set.svg#icon-checkbox"></use>
           </svg>
           <svg class="contact-form__icon-checked" width="16px" height="15px">
-            <use href=""></use>
+            <use href="./images/svg/svg_set.svg#icon-checked"></use>
           </svg>
-          Соглашаюсь с рассылкой и принимаю
-          <a href="" class="agreement-link">Условия договора</a>
+          I agree to the newsletter and accept
+          <a href="" class="agreement-link">contract terms</a>
         </label>
       </div>
-      <button type="submit" class="contact-form__btn-submit btn">Отправить</button>
+      <button type="submit" class="contact-form__btn-submit button__secondary--light">
+        Отправить
+      </button>
     </form>
   </div>
 </div>
