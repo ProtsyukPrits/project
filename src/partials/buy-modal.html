@@ -1,6 +1,6 @@
 <div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button type="button" class="modal__close-btn close-btn" data-modal-close>
+  <div class="modal" modal-contact>
+    <button type="button" class="modal__close-btn close-btn" data-modal-close1>
       <svg width="14px" height="14px">
         <use href="./images/svg/svg_set.svg#icon-close" class="modal__close-btn-icon"></use>
       </svg>
@@ -63,9 +63,106 @@
           <a href="" class="agreement-link">contract terms</a>
         </label>
       </div>
-      <button type="submit" class="contact-form__btn-submit button__secondary--light">
-        Отправить
-      </button>
+      <button type="submit" class="contact-form__btn-submit button__secondary--light">Send</button>
+    </form>
+  </div>
+  <div class="modal order-modal" modal-order>
+    <button type="button" class="modal__close-btn close-btn" data-modal-close2>
+      <svg width="14px" height="14px">
+        <use href="./images/svg/svg_set.svg#icon-close" class="modal__close-btn-icon"></use>
+      </svg>
+    </button>
+    <h2 class="modal__heading order__heading">Your order</h2>
+    <form class="order-form">
+      <ul class="order-list">
+        <li class="order-list__item">
+          <img
+            srcset="
+              ./images/products/imege_mobail/home-pic3.png    1x,
+              ./images/products/imege_mobail/home-pic3@2x.png 2x
+            "
+            src="./images/products/imege_mobail/home-pic3.png"
+            alt="strawberry icecream"
+            class="order-image"
+          />
+          <div class="order__item-description">
+            <p class="order__item-name">Strawberry ice cream</p>
+            <p class="order__item-price">3.00$</p>
+            <div class="quantity-wrapper">
+              <label class="order__item-label" for="qty_icecream">Quantity:</label>
+              <input
+                class="order__item-input qty"
+                type="number"
+                name="qty_icecream"
+                min="0"
+                id="qty_icecream"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="order-list__item">
+          <img
+            srcset="
+              ./images/products/imege_mobail/home-pic2.png    1x,
+              ./images/products/imege_mobail/home-pic2@2x.png 2x
+            "
+            src="./images/products/imege_mobail/home-pic2.png"
+            alt="vanilla ice coffee"
+            class="order-image"
+          />
+          <div class="order__item-description">
+            <p class="order__item-name">Vanilla ice coffee</p>
+            <p class="order__item-price">3.80$</p>
+            <div class="quantity-wrapper">
+              <label class="order__item-label" for="qty_icecoffee">Quantity:</label>
+              <input
+                class="order__item-input qty"
+                type="number"
+                name="qty_icecoffee"
+                min="0"
+                id="qty_icecoffee"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="order-list__item">
+          <img
+            srcset="
+              ./images/products/imege_mobail/home-pic1.png    1x,
+              ./images/products/imege_mobail/home-pic1@2x.png 2x
+            "
+            src="./images/products/imege_mobail/home-pic1.png"
+            alt="chocolate milkshake"
+            class="order-image"
+          />
+          <div class="order__item-description">
+            <p class="order__item-name">chocolate milkshake</p>
+            <p class="order__item-price">4.50$</p>
+            <div class="quantity-wrapper">
+              <label class="order__item-label" for="qty_milkshake">Quantity:</label>
+              <input
+                class="order__item-input qty"
+                type="number"
+                name="qty_milkshake"
+                min="0"
+                id="qty_milkshake"
+              />
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="order__cost">
+        Total order amount
+        <span class="total-value" id="total-amount">0$</span>
+      </div>
+      <div class="order__btn-wrapper">
+        <button type="button" class="order-calc-btn button__secondary--light" id="count">
+          Count
+        </button>
+        <button type="button" class="order-sub-btn button__secondary--light" forward-button>
+          Forward
+        </button>
+      </div>
     </form>
   </div>
 </div>
