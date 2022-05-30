@@ -1,0 +1,14 @@
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  z-index: 900;
+
+  &.hidden {
+    display: none;
+  }
+}
