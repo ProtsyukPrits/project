@@ -11,6 +11,11 @@
     padding-bottom: 56px;
   }
 
+  @media screen and (min-width: 1280px) {
+    padding-top: 147px;
+    padding-bottom: 60px;
+  }
+
   outline: 2px solid blue;
 }
 
@@ -36,10 +41,18 @@
 
   @media screen and (min-width: 768px) {
     bottom: -16px;
-    right: 185px;
+    right: 24%;
 
     width: 335px;
     height: 333px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: -7px;
+    right: 18%;
+
+    width: 534px;
+    height: 534px;
   }
 
   @keyframes pulsing {
@@ -92,7 +105,12 @@
 
   @media screen and (min-width: 768px) {
     bottom: -56px;
-    right: 303px;
+    right: 39%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: -84px;
+    right: 32%;
   }
 }
 
@@ -106,6 +124,12 @@
     bottom: -56px;
     right: 32px;
   }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    bottom: -84px;
+    right: 16px;
+  }
 }
 
 .hero__bio-eco-img {
@@ -117,6 +141,12 @@
     position: absolute;
     bottom: -40px;
     left: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    bottom: -24px;
+    left: 16px;
   }
 }
 
@@ -143,6 +173,14 @@
     font-size: 22px;
     line-height: 114%;
   }
+
+  @media screen and (min-width: 1280px) {
+    width: 277px;
+    margin-bottom: 24px;
+
+    font-size: 38px;
+    line-height: 116%;
+  }
 }
 
 .hero__title-accent {
@@ -155,6 +193,10 @@
     font-size: 34px;
     line-height: 90.5%;
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
 }
 
 .hero__nav {
@@ -162,21 +204,32 @@
   flex-wrap: wrap;
 
   margin-bottom: 61px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 108px;
+  }
 }
 
 .hero__nav-item:not(:last-child) {
   margin-right: 8px;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 12px;
+  }
 }
 
 .hero__article {
   position: relative;
 
   left: 152px;
+
+  @media screen and (min-width: 1280px) {
+    left: 215px;
+  }
 }
 
 .hero__article-text {
   width: 114px;
-  height: 48px;
 
   margin-bottom: 7px;
 
@@ -189,6 +242,15 @@
   overflow: hidden;
 
   outline: 2px solid red;
+
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 140%;
+  }
 }
 
 .hero__article-link {
@@ -202,14 +264,26 @@
   border-radius: 50%;
 
   background-color: $bg-primary;
+
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .hero__article-icon {
   fill: $icon-color-accent;
+
+  @media screen and (min-width: 1280px) {
+    width: 15px;
+    height: 8px;
+  }
 }
 
 .hero__statistics {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @media screen and (min-width: 768px) {
     position: absolute;
@@ -217,16 +291,35 @@
     right: 32px;
 
     display: inline-block;
+    // overflow: visible;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: -5px;
+    right: 16px;
   }
 }
 
 .hero__statistics-column {
-  background: url('/images/svg/counter-icon-tablet.svg') no-repeat top right;
-  // background: url('../../images/svg/counter-icon-desktop.svg') no-repeat top right;
+  @media screen and (min-width: 768px) {
+    background: url('/images/svg/counter-icon-tablet.svg') no-repeat top -4px right -18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background: url('/images/svg/counter-icon-desktop.svg') no-repeat top right;
+
+    padding-top: 4px;
+    padding-right: 18px;
+  }
 }
 
-.hero__nav-item:not(:last-child) {
-  margin-bottom: 16px;
+.hero__statistics-column:not(:last-child) {
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
 }
 
 .hero__counter {
@@ -239,14 +332,26 @@
 
   color: $text-color-accent;
   font-family: $secondary-font-family;
+
+  // overflow: visible;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 115%;
+  }
 }
 
 .hero__counter-text {
   font-size: 8px;
   font-weight: 400;
-  line-height: 1, 25%;
+  line-height: 125%;
   letter-spacing: 0.04em;
   text-align: right;
 
   color: $text-color-secondary;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 129%;
+  }
 }
