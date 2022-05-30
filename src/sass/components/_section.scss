@@ -1,12 +1,7 @@
 .section {
+  padding-top: 40px;
+  padding-bottom: 40px;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  @media screen and (min-width: 780px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
 
 
   @media screen and (min-width: 1280px) {
@@ -18,37 +13,34 @@
 .section.products {
   @media screen and (max-width: 779.98px) {
     padding-top: 80px;
+  }
+
+  @media screen and (min-width: 768px) {
     padding-bottom: 60px;
   }
 }
 
 .section.about {
-  padding-top: 20px;
-}
-
-.section.advantages {
-  @media screen and (max-width: 779.98px) {
-    padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
   }
 }
 
-.section.gallery {
-  @media screen and (max-width: 779.98px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+.section.advantages {
+  @media screen and (max-width: 479.98px) {
+    padding-bottom: 20px;
   }
 }
 
 .section.customer {
   @media screen and (max-width: 779.98px) {
-    padding-top: 40px;
-    padding-bottom: 24px;
+    padding-bottom: 0px;
   }
 }
 
 .section.contacts {
   @media screen and (max-width: 779.98px) {
-    padding-top: 24px;
+    padding-top: 48px;
     padding-bottom: 48px;
   }
 
