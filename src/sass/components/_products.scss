@@ -1,5 +1,9 @@
-.products{
-	margin-left: auto;
+.products {
+	padding-top: 80px;
+
+	@media screen and (min-width: 1280px) {
+		padding-top: 60px;
+	}
 }
 
 .products__natural {
@@ -13,9 +17,10 @@
 }
 
 .products__title {
-	@media screen and(min-width: 1280px){
-		margin-bottom: 258px ;
+	@media screen and(min-width: 1280px) {
+		margin-bottom: 258px;
 	}
+
 	margin-bottom: 148px;
 	font-family: $secondary-font-family;
 	font-size: 34px;
@@ -37,8 +42,8 @@
 	width: 100%;
 	padding-top: 160px;
 	padding-bottom: 40px;
-	
-	
+
+
 
 
 	&:nth-child(1) {
@@ -54,13 +59,15 @@
 	}
 
 	border-radius: 24px;
-@media screen and(max-width: 767px){
-margin-bottom: 140px;
 
-&:last-child{
-	margin-bottom: 0;
-}
-}
+	@media screen and(max-width: 767px) {
+		margin-bottom: 140px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
 	@media screen and(min-width: 768px) {
 		width: 224px;
 		margin-right: 16px;
@@ -75,30 +82,13 @@ margin-bottom: 140px;
 		width: 395px;
 		margin-right: 32px;
 		padding-top: 165px;
+
 		&:last-child {
 			margin-right: 0;
 		}
 	}
 }
 
-.products__picture{
-	display: flex;
-	justify-content: center;
-	position: absolute;
-	top: -140px;
-	@media screen and(max-width: 768px){
-	width: 100%;
-	margin: 0 auto;
-}
-
-	@media screen and(min-width: 768px) {
-	top: -138px;
-}
-	@media screen and(min-width: 1280px){
-	top: -261px;
-}
-
-}
 
 .products__block-title {
 	display: block;
@@ -112,7 +102,7 @@ margin-bottom: 140px;
 	color: $button-color;
 }
 
-.products__dote::after{
+.products__dote::after {
 	display: inline-block;
 	content: "";
 	display: flex;
@@ -121,61 +111,65 @@ margin-bottom: 140px;
 	background-image: url(../images/products/group3.svg);
 	background-size: cover;
 	background-position: content;
-	background: no-repid;
+	background-repeat: no-repeat;
 	margin: 0 auto;
 	margin-top: 38px;
 
 }
 
-.profucts__ice-cream::before{
-			content: "";
-			position: absolute;
-			top:-140px;
-			left: 50%;
-			transform: translate(-50%);
-			background-image: url("../images/products/imege_mobail/home-pic3.png");
-			background-size: contain;
-			width: 280px;
-			height:280px;
+.profucts__ice-cream::before {
+	content: "";
+	position: absolute;
+	top: -140px;
+	left: 50%;
+	transform: translate(-50%);
+	background-image: url("../images/products/imege_mobail/home-pic3.png");
+	background-size: contain;
+	width: 280px;
+	height: 280px;
+
 	@media (max-width: 767px) {
-			background-image: 
-				url("../images/products/imege_mobail/home-pic3.png");
-	
-			@media (min-device-pixel-ratio: 2),
-			(min-resolution: 192dpi),
-			(min-resolution: 2dppx) {
-				background-image: 
-					url("../images/products/imege_mobail/home-pic3@2x.png");
-			}
+		background-image:
+			url("../images/products/imege_mobail/home-pic3.png");
+
+		@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+			background-image:
+				url("../images/products/imege_mobail/home-pic3@2x.png");
 		}
-						@media (min-width: 768px) {
-							width: 224px;
-							height: 224px;
-							background-image:
-								url("../images/products/imege_tablet/pr_tablet1.png");
-										@media (min-device-pixel-ratio: 2),
-							(min-resolution: 192dpi),
-							(min-resolution: 2dppx) {
-								background-image:
-									url("../images/products/imege_tablet/pr_tablet1@2x.png");
-							}
-						}
-														@media (min-width: 1280px) {
-															width: 394px;
-															height: 394px;
-															top: -50%;
-															background-image:
-																url("../images/products/imeges_desctop/desctop-pic1.png");
-							
-															@media (min-device-pixel-ratio: 2),
-															(min-resolution: 192dpi),
-															(min-resolution: 2dppx) {
-																background-image:
-																	url("../images/products/imeges_desctop/desctop-pic1@2x.png");
-															}
-														}
-							
-							
+	}
+
+	@media (min-width: 768px) {
+		width: 224px;
+		height: 224px;
+		background-image:
+			url("../images/products/imege_tablet/pr_tablet1.png");
+
+		@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+			background-image:
+				url("../images/products/imege_tablet/pr_tablet1@2x.png");
+		}
+	}
+
+	@media (min-width: 1280px) {
+		width: 394px;
+		height: 394px;
+		top: -50%;
+		background-image:
+			url("../images/products/imeges_desctop/desctop-pic1.png");
+
+		@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+			background-image:
+				url("../images/products/imeges_desctop/desctop-pic1@2x.png");
+		}
+	}
+
+
 }
 
 

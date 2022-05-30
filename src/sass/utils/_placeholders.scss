@@ -1,5 +1,5 @@
 %button {
-    display: inline-block;
+    display: block;
     font-family: inherit;
     text-align: center;
     border: 0;
@@ -17,12 +17,17 @@
 
     &::after {
         display: inline-block;
-        margin-left: 13px;
-        content: '>';
-        vertical-align: -5%;
+
+        content: '';
         height: 10px;
-        width: 5px;
+        width: 7px;
+        margin-left: 12px;
+        background-size: cover;
+        background-position: content;
+        background-repeat: no-repeat;
     }
+
+
 }
 
 %button__secondary {

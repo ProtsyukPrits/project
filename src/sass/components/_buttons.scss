@@ -20,6 +20,10 @@
     &:focus {
         background-color: $button-color-hover;
     }
+
+    &::after {
+        background-image: url(../images/svg/button-icon.svg);
+    }
 }
 
 .button__primary--accent {
@@ -32,24 +36,32 @@
     &:focus {
         background-color: $button-color-accent-hover;
     }
+
+    &::after {
+        background-image: url(../images/svg/button-icon-white.svg);
+    }
 }
 
+.button__header {
 
+    @media screen and (max-width: 767.98px) {
+        display: none;
+    }
+}
 
 .button__menu {
-    @extend %button;
-    @extend %button__primary;
-    @include btn-color($button-color, $button-color-accent);
+    margin-bottom: 20px;
 
-    min-width: 100%;
+    @media screen and (max-width: 767.98px) {
+        min-width: 210px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     @media screen and (min-width: 768px) {
         min-width: 186px;
-    }
-
-    &:hover,
-    &:focus {
-        background-color: $button-color-hover;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

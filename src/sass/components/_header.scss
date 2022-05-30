@@ -13,18 +13,11 @@
   @media screen and (min-width: 768px) {
     padding-top: 32px;
   }
+  @media screen and (min-width: 1280px) {
+    padding-top: 37px;
+  }
 }
 .header__buy-btn {
-  width: 160px;
-  padding-left: 37px;
-  padding-right: 37px;
-  display: none;
-  @extend %button__primary;
-  border: none;
-  color: $text-color-accent;
-  background-color: $button-color;
-  transition: background-color $animation;
-
   &::after {
     margin-left: 0;
   }
@@ -45,9 +38,17 @@
   @media screen and (min-width: 768px) {
     margin-right: 32px;
   }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 .menu-btn__icon {
-  fill: teal;
+  fill: $button-color-accent;
+  transition: fill $animation;
+  .menu-btn:hover &,
+  .menu-bnt:focus & {
+    fill: $button-color;
+  }
 }
 
 .header__logo {
@@ -63,25 +64,42 @@
     &:last-child {
       border-bottom: 1px solid $border-color-accent;
     }
+  }
+  &__link {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    @include family-vr(inherit, 700, 14px, 1.302);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
 
-    &__link {
-      padding-top: 11px;
-      padding-bottom: 11px;
-      @include family-vr(inherit, 700, 14px, 1.302);
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 18px;
-      display: flex;
-      align-items: center;
+    color: $text-color-secondary;
 
-      color: $text-color-secondary;
+    transition: color $animation;
 
-      transition: color $animation;
-
-      &:hover,
-      &:focus {
-        color: $text-color-accent;
-      }
+    &:hover,
+    &:focus,
+    &.current {
+      color: $text-color-accent;
     }
+  }
+}
+
+.header__site-nav {
+  @media screen and (max-width: 1279.98px) {
+    display: none;
+  }
+}
+.header-site-nav {
+  &__list {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+  &__link {
+    @include family-vr(inherit, 700, 16px, 1.302);
   }
 }
