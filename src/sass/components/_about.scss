@@ -16,17 +16,25 @@
       background-image: url(../images/about/milk.png);
     }
   }
+
+    @media screen and (min-width: 768px) {
+      background-image: none
+   }
 }
 
 .about {
   background-color: $bg-accent-primary-light;
   padding-top: 40px;
+
+  @media screen and (min-width: 768px){
+    padding-top: 20px;
+  }
+
 }
 
 .about__wrapper {
   margin-left: auto;
   margin-right: auto;
-  width: 220px;
 }
 
 .about__title {
@@ -38,6 +46,15 @@
   line-height: 1.16;
   margin-bottom: 15px;
   color: $text-color-accent-light;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
 }
 
 .about__subtitle {
@@ -49,21 +66,46 @@
   line-height: 1.14;
   margin-bottom: 32px;
   color: $text-color-accent;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.about__block {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .about__image {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    height: 335px;
+  }
 }
 
 .about__wrap {
-  margin-bottom: 20px;
-  max-width: 220px;
-
-  @media screen and (min-width: 480px)and (max-width: 767.99px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    max-width: 220px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 2%;
+    margin-left: 32px;
   }
 }
 
@@ -73,6 +115,11 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 19px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 176%;
+  }
 }
 
 .about__content--description-1 {
@@ -84,9 +131,18 @@
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.99px) {
-  .about__button {
+.about__button{
+  margin-top: 20px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
   }
+}
+
+.button__primary--light{
+  @media screen and (min-width: 768px) {
+      margin: 40px 0 0 0;
+    }
 }
