@@ -1,3 +1,7 @@
+.page-header {
+  position: relative;
+  z-index: 900;
+}
 .page-header__container {
   background-color: transparent;
   display: flex;
@@ -52,8 +56,29 @@
 }
 
 .header__logo {
+  text-transform: uppercase;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  color: $text-color-accent;
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     flex-grow: 2;
+  }
+
+  &-svg {
+    background-color: $networks-color-hover;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  &-icon {
+    fill: $bg-primary;
   }
 }
 
@@ -69,9 +94,7 @@
     padding-top: 11px;
     padding-bottom: 11px;
     @include family-vr(inherit, 700, 14px, 1.302);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
+
     display: flex;
     align-items: center;
 

@@ -1,16 +1,13 @@
 <header class="page-header">
   <div class="container page-header__container">
     <a href="./index.html" class="logo header__logo">
-      <img
-        srcset="
-          ./images/header/logo.webp    1x,
-          ./images/header/logo@2x.webp 2x,
-          ./images/header/logo.png     1x,
-          ./images/header/logo@2x.png  2x
-        "
-        src="./images/header/logo.png"
-        alt="company logo"
-      />
+      <svg width="50px" height="50px" class="header__logo-svg">
+        <use
+          href="./images/svg/svg_set.svg#icon-icecream"
+          class="logo__icon header__logo-icon"
+        ></use>
+      </svg>
+      icecream
     </a>
     <button type="button" class="menu-btn btn" data-menu-open>
       <svg width="20px" height="12px">
@@ -36,7 +33,9 @@
         </li>
       </ul>
     </nav>
-    <button type="button" class="button__primary--light button__header">Buy now</button>
+    <button type="button" class="button__primary--light button__header" data-modal-open1>
+      Buy now
+    </button>
   </div>
 
   <div class="popup-menu is-hidden" data-menu>
@@ -45,7 +44,9 @@
         <use href="./images/svg/svg_set.svg#icon-close" class="close-btn__icon"></use>
       </svg>
     </button>
-    <button type="button" class="button__primary--light button__menu">Buy now</button>
+    <button type="button" class="button__primary--light button__menu" data-modal-open2>
+      Buy now
+    </button>
 
     <nav class="site-nav popup-menu__site-nav">
       <ul class="site-nav__list">
