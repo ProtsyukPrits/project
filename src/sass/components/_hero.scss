@@ -162,7 +162,7 @@
 
   font-size: 26px;
   font-weight: 400;
-  line-height: 115%;
+  line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
@@ -172,7 +172,7 @@
   @media screen and (min-width: 768px) {
     width: 162px;
     font-size: 22px;
-    line-height: 114%;
+    line-height: 1.15;
   }
 
   @media screen and (min-width: 1280px) {
@@ -180,19 +180,19 @@
     margin-bottom: 24px;
 
     font-size: 38px;
-    line-height: 116%;
+    line-height: 1.16;
   }
 }
 
 .hero__title-accent {
   font-size: 48px;
-  line-height: 96.5%;
+  line-height: 0.97;
 
   color: $text-color-accent;
 
   @media screen and (min-width: 768px) {
     font-size: 34px;
-    line-height: 90.5%;
+    line-height: 0.91;
   }
 
   @media screen and (min-width: 1280px) {
@@ -236,7 +236,7 @@
 
   font-size: 8px;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 1.5;
 
   color: $text-color-secondary;
 
@@ -246,7 +246,7 @@
     margin-bottom: 20px;
 
     font-size: 14px;
-    line-height: 140%;
+    line-height: 1.4;
   }
 }
 
@@ -261,6 +261,7 @@
   border-radius: 50%;
   border: 0;
 
+  color: $button-color-accent;
   background-color: $bg-primary;
 
   @media screen and (min-width: 1280px) {
@@ -269,8 +270,14 @@
   }
 }
 
+.hero__info-btn:hover,
+.hero__info-btn:focus {
+  color: $button-color-accent-hover;
+  background-color: $button-color-hover;
+}
+
 .hero__btn-icon {
-  fill: $icon-color-accent;
+  fill: currentColor;
 
   @media screen and (min-width: 1280px) {
     width: 15px;
@@ -320,7 +327,7 @@
   width: 51px;
   font-size: 8px;
   font-weight: 400;
-  line-height: 125%;
+  line-height: 1.25;
   letter-spacing: 0.04em;
   text-align: right;
 
@@ -330,7 +337,7 @@
     width: 92px;
 
     font-size: 14px;
-    line-height: 129%;
+    line-height: 1.29;
   }
 }
 
