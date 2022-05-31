@@ -8,23 +8,23 @@ new Swiper('.swiper', {
 
     grabCursor: true,
 
-    speed: 200,
+    speed: 3000,
 
     autoHeight: true,
 
     initialSlide: 5,
     
-    // effect: 'flip',
+    effect: 'flip',
 
-    // flipEffect: {
-    //     slideShadows: true,
-    //     limitRotation: true
+    flipEffect: {
+        slideShadows: true,
+        limitRotation: true
         
-    // },
+    },
     
-    // autoplay: {
-    // delay: 3200,
-    // },
+    autoplay: {
+    delay: 3000,
+    },
 
     keyboard: {
         enabled: true,
