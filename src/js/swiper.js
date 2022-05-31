@@ -2,14 +2,17 @@ new Swiper('.swiper', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
     },
     loop: true,
 
     grabCursor: true,
 
-    speed: 1200,
+    speed: 3000,
 
     autoHeight: true,
+
+    initialSlide: 5,
     
     effect: 'flip',
 
@@ -17,6 +20,10 @@ new Swiper('.swiper', {
         slideShadows: true,
         limitRotation: true
         
+    },
+    
+    autoplay: {
+    delay: 3000,
     },
 
     keyboard: {

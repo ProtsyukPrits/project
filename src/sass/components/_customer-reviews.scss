@@ -13,7 +13,7 @@
 .customer__img {
     margin-left: auto;
     margin-right: auto;
-    width: auto;
+    border-radius: 50%;
 }
 
 .customer__content {
@@ -25,6 +25,8 @@
 
     @media screen and (min-width: 1280px) {
         padding-top: 16px;
+        padding-left: 132px;
+        padding-right: 132px;
     }
 }
 
@@ -47,6 +49,7 @@
         padding: 32px 105px;
         margin-bottom: 16px;
     }
+
 }
 
 .customer__about {
@@ -74,8 +77,8 @@
         content: '';
         height: 40px;
         width: 54px;
-        top: -13px;
-        left: -2px;
+        top: -20px;
+        left: -35px;
         background-image: url('../images/customer-reviews/quotes.svg');
         background-repeat: no-repeat;
         background-size: contain;
@@ -85,9 +88,11 @@
         }
 
         @media screen and (min-width: 1280px) {
-            left: 5px;
+
+            left: -10px;
         }
     }
+
 }
 
 .customer__about-text {
@@ -108,6 +113,7 @@
         font-size: 16px;
         line-height: 1.88;
     }
+
 }
 
 .customer__name {
@@ -175,6 +181,5 @@
 
     @media screen and (min-width: 1280px) {
         top: 32px;
-        margin-bottom: 32px;
     }
 }
