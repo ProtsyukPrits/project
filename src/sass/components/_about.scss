@@ -1,39 +1,38 @@
 .about {
   background-color: $bg-accent-primary-light;
 
+
+  // ______________+++++
   @media screen and (max-width: 767px) {
-    background-image: url(../images/about/milk.png);
-    background-repeat: no-repeat;
-    background-position: right 0 bottom 210px;
-    background-size: contain;
-  }
-
-  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    & {
-      background-image: url(../images/about/milk-2x.png);
-      ;
-    }
+    background-image: url(../images/about/about-left-450x1.png),
+      url(../images/about/about-right-450x1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0% 67%, 100% 73%;
   }
 
 
-  @media screen and (min-width: 1280px) {
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-size: contain;
-    // max-width: 1280px;
-    background-position-y: 187px;
-    background-image: url(../images/about/milk_1280.png);
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+   
+    background-image: url(../images/about/about-left-450x2.png),
+      url(../images/about/about-right-450x2.png);
+  }
 
-    @media (min-device-pixel-ratio: 2),
+
+// __________++++++
+@media screen and (min-width: 1280px) {
+  background-image: url(../images/about/about-left-1280x1.png),
+    url(../images/about/about-right-1280x1.png);
+     background-repeat: no-repeat, no-repeat;
+    background-position: 0% 40%, 100% 95%;
+
+  @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(../images/about/milk_1280.png);
-    }
-  }
+      
+    background-image: url(../images/about/about-left-1280x2.png),url(../images/about/about-right-1280x2.png);
+}
+}
 }
 
 .about__wrapper {
@@ -85,7 +84,6 @@
   line-height: 1.14;
 
   color: $text-color-accent;
-
 }
 
 .about__block {
