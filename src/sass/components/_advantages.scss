@@ -115,11 +115,10 @@
             margin-bottom: 40px;
         }
     }
-
-
 }
 
 .advantages__caption {
+    display: block;
     margin-bottom: 13px;
     color: $text-color-accent;
     font-family: $secondary-font-family;
