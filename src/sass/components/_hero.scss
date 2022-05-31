@@ -153,7 +153,7 @@
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 108px;
-  }  
+  }
 }
 
 .hero__title {
@@ -213,7 +213,7 @@
   }
 }
 
-.hero__article {
+.hero__info {
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -229,7 +229,7 @@
   }
 }
 
-.hero__article-text {
+.hero__info-text {
   width: 114px;
 
   margin-bottom: 7px;
@@ -250,7 +250,7 @@
   }
 }
 
-.hero__article-link {
+.hero__info-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,6 +259,7 @@
   height: 18px;
 
   border-radius: 50%;
+  border: 0;
 
   background-color: $bg-primary;
 
@@ -268,7 +269,7 @@
   }
 }
 
-.hero__article-icon {
+.hero__btn-icon {
   fill: $icon-color-accent;
 
   @media screen and (min-width: 1280px) {
@@ -316,6 +317,24 @@
 }
 
 .hero__counter {
+  width: 51px;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.04em;
+  text-align: right;
+
+  color: $text-color-secondary;
+
+  @media screen and (min-width: 1280px) {
+    width: 92px;
+
+    font-size: 14px;
+    line-height: 129%;
+  }
+}
+
+.hero__counter-accent {
   font-size: 28px;
   font-weight: 400;
   line-height: 114%;
@@ -331,20 +350,5 @@
 
     font-size: 46px;
     line-height: 115%;
-  }
-}
-
-.hero__counter-text {
-  font-size: 8px;
-  font-weight: 400;
-  line-height: 125%;
-  letter-spacing: 0.04em;
-  text-align: right;
-
-  color: $text-color-secondary;
-
-  @media screen and (min-width: 1280px) {
-    font-size: 14px;
-    line-height: 129%;
   }
 }
