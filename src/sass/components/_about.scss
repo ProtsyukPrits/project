@@ -4,7 +4,7 @@
     @media screen and (max-width: 767px){
     background-image: url(../images/about/milk.png);
     background-repeat: no-repeat;
-    background-position: right 0 bottom 170px;
+    background-position: right 0 bottom 210px;
     background-size: contain;
     }
   
@@ -22,7 +22,7 @@
           margin-right: auto;
           background-repeat: no-repeat;
           background-size: contain;
-          max-width: 1280px;
+          // max-width: 1280px;
           background-position-y: 187px;
           background-image: url(../images/about/milk_1280.png);
     
@@ -114,8 +114,8 @@
     max-width: 220px;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    max-width: 320px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    max-width: 220px;
     margin-left: auto;
     margin-right: auto;
   }
