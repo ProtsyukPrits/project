@@ -17,12 +17,6 @@
     }
   }
 
-    
-}
-
-.about {
-  background-color: $bg-accent-primary-light;
-
   @media screen and (min-width: 1280px) {
     margin-left: auto;
       margin-right: auto;
@@ -39,6 +33,11 @@
         background-image: url(../images/about/milk_1280.png);
       }
     }
+    
+}
+
+.about {
+  background-color: $bg-accent-primary-light;
 }
 
 .about__wrapper {
