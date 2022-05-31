@@ -41,7 +41,15 @@
         content: '';
         width: 33px;
         height: 50px;
-        background-image: url(../images/advantages/png/icon-liter.png);
+        background-image: url(../images/advantages/png/icon-liter-1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/advantages/png/icon-liter-2x.png);
+        }
+
         background-size: cover;
         background-repeat: no-repeat;
 
@@ -60,7 +68,15 @@
         content: '';
         width: 50px;
         height: 50px;
-        background-image: url(../images/advantages/png/icon-kg.png);
+        background-image: url(../images/advantages/png/icon-kg-1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/advantages/png/icon-kg-2x.png);
+        }
+
         background-size: cover;
         background-repeat: no-repeat;
 
@@ -79,7 +95,15 @@
         content: '';
         width: 44px;
         height: 50px;
-        background-image: url(../images/advantages/png/icon-hurt.png);
+        background-image: url(../images/advantages/png/icon-hurt-1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/advantages/png/icon-hurt-2x.png);
+        }
+
         background-size: cover;
         background-repeat: no-repeat;
 
@@ -129,7 +153,7 @@
         line-height: 1.71;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1280px) {
         font-size: 16px;
         line-height: 1.75;
     }
