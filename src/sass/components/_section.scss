@@ -2,8 +2,49 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
+
+
   @media screen and (min-width: 1280px) {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+
+.section.products {
+  @media screen and (max-width: 767.98px) {
+    padding-top: 80px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+}
+
+.section.about {
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+  }
+}
+
+.section.advantages {
+  @media screen and (max-width: 767.98px) {
+    padding-top: 0;
+  }
+}
+
+.section.customer {
+  @media screen and (max-width: 767.98px) {
+    padding-bottom: 0px;
+  }
+}
+
+.section.contacts {
+  @media screen and (max-width: 767.98px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 120px;
   }
 }
