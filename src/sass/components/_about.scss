@@ -1,52 +1,53 @@
 .about {
   background-color: $bg-accent-primary-light;
 
-    @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     background-image: url(../images/about/milk.png);
     background-repeat: no-repeat;
     background-position: right 0 bottom 210px;
     background-size: contain;
-    }
-  
-      @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-      screen and (min-resolution: 192dpi) and (max-width: 767px),
-      screen and (min-resolution: 2dppx) and (max-width: 767px) {
-        & {
-          background-image: url(../images/about/milk-2x.png);;
-        }
-      }
-    
+  }
 
-        @media screen and (min-width: 1280px) {
-          margin-left: auto;
-          margin-right: auto;
-          background-repeat: no-repeat;
-          background-size: contain;
-          // max-width: 1280px;
-          background-position-y: 187px;
-          background-image: url(../images/about/milk_1280.png);
-    
-          @media (min-device-pixel-ratio: 2),
-          (-webkit-min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url(../images/about/milk_1280.png);
-          }
-          }
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    & {
+      background-image: url(../images/about/milk-2x.png);
+      ;
+    }
+  }
+
+
+  @media screen and (min-width: 1280px) {
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    // max-width: 1280px;
+    background-position-y: 187px;
+    background-image: url(../images/about/milk_1280.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/about/milk_1280.png);
+    }
+  }
 }
 
 .about__wrapper {
   margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
-      font-size: 48px;
-      line-height: 1.14;
-      margin-bottom: 40px;
-    }
-  
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 60px;
-    }
+    font-size: 48px;
+    line-height: 1.14;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 60px;
+  }
 
   margin-left: auto;
   margin-right: auto;
@@ -67,9 +68,10 @@
     line-height: 1.15;
     margin-bottom: 16px;
   }
-  
+
   @media screen and (min-width: 1280px) {
     font-size: 30px;
+    line-height: 1.13;
     margin-bottom: 16px;
   }
 }
@@ -81,7 +83,7 @@
   text-align: center;
   font-size: 34px;
   line-height: 1.14;
-  
+
   color: $text-color-accent;
 
 }
@@ -106,7 +108,7 @@
     margin: 0;
     margin-right: 139px;
     height: 501px;
-    }
+  }
 }
 
 .about__wrap {
@@ -130,7 +132,7 @@
     padding-top: 91px;
     padding-right: 13%;
     margin: 0;
-    }
+  }
 }
 
 .about__content {
@@ -138,18 +140,18 @@
   color: $text-color-dark;
   font-size: 12px;
   font-weight: 500;
-  line-height: 19px;
+  line-height: 1.58;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
-    line-height: 176%;
+    line-height: 1.78;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 16px;
-    line-height: 1.76;
+    line-height: 1.75;
     letter-spacing: 0.04em;
-    }
+  }
 }
 
 .about__content--description-first {
@@ -168,7 +170,7 @@
     margin-bottom: 10px;
   }
 
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1280px) {
     margin-bottom: 40px;
   }
 }
@@ -177,7 +179,7 @@
   margin-bottom: 40px;
 }
 
-.about__button{
+.about__button {
   @media screen and (min-width: 480px) and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
