@@ -30,10 +30,11 @@
 	color: $button-color-accent;
 			@media screen and(min-width: 768px) {
 				font-size: 48px;
+				margin-bottom: 154px;
 			}
 	@media screen and(min-width: 1280px) {
 		font-size: 58px;
-		margin-bottom: 258px;
+		margin-bottom: 261px;
 	}
 }
 
@@ -48,9 +49,6 @@
 	width: 100%;
 	padding-top: 160px;
 	padding-bottom: 40px;
-
-
-
 	&:nth-child(1) {
 		background-color: $icon-color-accent-light;
 	}
@@ -75,6 +73,8 @@
 	}
 
 	@media screen and(min-width: 768px) {
+		padding-left: 32px;
+		padding-right: 32px;
 		width: 224px;
 		margin-right: 16px;
 		padding-top: 118px;
@@ -85,6 +85,8 @@
 	}
 
 	@media screen and(min-width: 1280px) {
+		padding-left: 75px;
+			padding-right: 75px;
 		width: 395px;
 		margin-right: 32px;
 		padding-bottom: 60px;
@@ -101,6 +103,7 @@
 	display: block;
 	margin-bottom: 32px;
 	font-family: $secondary-font-family;
+	font-weight: 400;
 	font-size: 20px;
 	line-height: 1.15;
 	text-align: center;
@@ -114,14 +117,12 @@
 }
 
 .products__dote::after {
-	display: inline-block;
 	content: "";
 	display: flex;
 	width: 26px;
 	height: 6px;
 	background-image: url(../images/products/group3.svg);
 	background-size: cover;
-	background-position: content;
 	background-repeat: no-repeat;
 	margin: 0 auto;
 	margin-top: 38px;
@@ -168,7 +169,7 @@
 	@media (min-width: 1280px) {
 		width: 394px;
 		height: 394px;
-		top: -50%;
+		top: -261px;
 		background-image:
 			url("../images/products/imeges_desctop/desctop-pic1.png");
 
@@ -224,7 +225,7 @@
 	@media (min-width: 1280px) {
 		width: 394px;
 		height: 394px;
-		top: -50%;
+		top: -261px;
 		background-image:
 			url("../images/products/imeges_desctop/desctop-pic2.png");
 
@@ -280,7 +281,7 @@
 	@media (min-width: 1280px) {
 		width: 394px;
 		height: 394px;
-		top: -50%;
+		top: -261px;
 		background-image:
 			url("../images/products/imeges_desctop/desctop-pic3.png");
 
@@ -297,8 +298,8 @@
 
 
 .products__text {
-	margin: 0 auto;
 	width: 200px;
+	margin: 0 auto;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.52;
@@ -441,6 +442,7 @@ opacity: 1;
 .menu--products__menu {
 	font-family: $secondary-font-family;
 	color: $text-color-secondary;
+	font-weight: 400;
 	text-align: center;
 	padding: 50px 40px;
 	font-size: 24px;
@@ -453,7 +455,7 @@ opacity: 1;
 	opacity: 0;
 	border-radius: 25px;
 		@media screen and (max-width: 767px) {
-			padding:40px 20px;
+			padding:40px 20px 20px 20px;
 				font-size: 20px;
 			}
 		@media screen and (min-width: 768px) {
@@ -489,34 +491,34 @@ opacity: 1;
 .products--but-one:active {
 	top: 3px;
 	-webkit-box-shadow: 2px 2px 2px rgba(237, 178, 207, 0.5);
-	box-shadow: 1px 5px 1px rgba(234, 54, 78, 0.7);
+	box-shadow: 1px 2px 1px rgba(195, 37, 58, 0.7);
 }
 .products--but-two:active{
 			top: 3px;
 			-webkit-box-shadow: 2px 2px 2px rgba(221, 148, 71, 0.5);
-			box-shadow: 1px 5px 1px rgba(204, 145, 62, 0.7);
+			box-shadow: 1px 2px 1px rgba(204, 145, 62, 0.7);
 }
 
 .products--but-three:active{
 				top: 3px;
 					-webkit-box-shadow: 2px 2px 2px rgba(40, 236, 37, 0.5);
-					box-shadow: 1px 5px 1px rgba(120, 234, 58, 0.93);
+					box-shadow: 1px 2px 1px rgba(120, 234, 58, 0.93);
 }
 
 .products--menu-one{
-	background-color: $icon-color-accent-light;
+	background-color: #F88CA5;
 	-webkit-box-shadow: 2px 2px 2px rgba(237, 178, 207, 0.5);
 		box-shadow: 0px 5px 1px rgba(230, 127, 141, 0.7);
 }
 
 .products--menu-two{
-	background-color: $bg-accent-second;
+	background-color:#E8C086;
 			-webkit-box-shadow: 2px 2px 2px rgba(221, 148, 71, 0.5);
-				box-shadow: 0px 5px 1px rgba(150, 115, 66, 0.7);
+				box-shadow: 0px 5px 1px rgba(204, 160, 99, 0.7);
 }
 
 .products--menu-three{
-	background-color: $bg-accent-third;
-					-webkit-box-shadow: 2px 2px 2px rgba(75, 216, 73, 0.5);
-						box-shadow: 0px 5px 1px rgba(123, 169, 98, 0.93);
+	background-color: #ACD17B;
+					-webkit-box-shadow: 2px 2px 2px rgba(79, 106, 78, 0.5);
+						box-shadow: 0px 5px 1px rgba(117, 155, 98, 0.5);
 }
