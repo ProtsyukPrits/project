@@ -8,6 +8,11 @@
       
       );
 }
+.contacts__container{
+    @media screen and (min-width: 768px) and (max-width: 1279.99px) {
+    padding-left: 18px;
+    padding-right: 18px;}
+}
 .container__list{
     display: flex;
     flex-direction: column;
@@ -60,7 +65,7 @@
     @include family-vr(null, 500, 12px, null);
     @media screen and (min-width: 768px) {
         margin-bottom: 32px;
-        @include family-vr(null, 500, 16px, 186%); 
+        @include family-vr(null, 500, 16px, 1.86); 
         }
     &--foodtruck{ 
         padding: 1px 26px;
@@ -76,29 +81,29 @@
     }
 }
 .contacts__caption {
-
+    margin-bottom: 8px;
     letter-spacing: 0.04em;
-    @include family-vr(normal, 500, 12px, 186%);
+    @include family-vr(normal, 500, 12px, 1.86);
     color: $text-color-primary;
-    @media screen and (min-width: 768px) {
-        @include family-vr(null, 500, 14px, 186%); 
+    @media screen and (min-width: 768px) and (max-width: 1279.99px) {
+        margin-bottom: 12px;
+        @include family-vr(null, 500, 14px, 1.86); 
         }
-        @media screen and (min-width: 1280px) {
-            @include family-vr(null, 500, 16px, 186%); 
-            }    
+    @media screen and (min-width: 1280px) {
+    @include family-vr(null, 500, 16px, 1.86); 
+    }    
 }
 
 .contacts__text{
-    margin-top: 8px;
+   
     @include family-vr(null, 500, 12px, 18px);
     color: $text-color-dark;
     @media screen and (min-width: 768px) and (max-width: 1279.99px){
-        margin-top: 12px;
-        @include family-vr(null, 500, 14px, 166%); 
+        @include family-vr(null, 500, 14px, 1.66); 
         }
     @media screen and (min-width: 1280px) {
         max-width: 243px;
-        @include family-vr(null, 500, 16px, 183%); 
+        @include family-vr(null, 500, 16px, 1.83); 
         }     
 }
 .schedule {
@@ -117,13 +122,13 @@
     }
 }
 .schedule__text{
-    @include family-vr(null, 500, 12px, 186%);
+    @include family-vr(null, 500, 12px, 1.86);
     color: $text-color-primary;
     @media screen and (min-width: 768px) {
-        @include family-vr(null, 500, 14px, 186%);
+        @include family-vr(null, 500, 14px, 1.86);
         }
         @media screen and (min-width: 1280px) {
-            @include family-vr(null, 500, 16px, 186%);
+            @include family-vr(null, 500, 16px, 1.86);
             }
     &--color{ 
         color:$text-color-accent-light;}
@@ -140,10 +145,10 @@
     @include family-vr(null, 500, 12px, 18px);
     color: $text-color-dark;
     @media screen and (min-width: 768px) {
-        @include family-vr(null, 500, 14px, 183%); 
+        @include family-vr(null, 500, 14px, 1.83); 
         }
     @media screen and (min-width: 1280px) {
-        @include family-vr(null, 500, 16px, 183%); 
+        @include family-vr(null, 500, 16px, 1.83); 
         }
 }
 
@@ -160,7 +165,7 @@
         margin-bottom: 10px;
     }
     @media screen and (min-width: 768px) {
-        margin-right: 14px;
+        margin-right: 14.5px;
         }
     }
    
