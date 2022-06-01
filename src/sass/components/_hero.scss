@@ -264,6 +264,8 @@
   color: $button-color-accent;
   background-color: $bg-primary;
 
+  transition: background-color $animation;
+
   @media screen and (min-width: 1280px) {
     width: 26px;
     height: 26px;
