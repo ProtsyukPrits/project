@@ -10,7 +10,7 @@
   opacity: 1;
   transform: translate(0) scale(1) rotate(0);
 
-  transition: opacity $animation, transform $animation;
+  transition: opacity $animation-modal, transform $animation-modal;
   &:hover,
   &:focus {
     outline: none;
@@ -19,7 +19,7 @@
   &.hidden {
     opacity: 0;
     transform: translate(200px, 200px) scale(5) rotate(720deg);
-    transition: opacity $animation, transform $animation;
+    transition: opacity $animation-modal, transform $animation-modal;
     pointer-events: none;
   }
   &__icon {

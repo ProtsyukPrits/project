@@ -8,12 +8,12 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
   opacity: 1;
-  transition: opacity $animation;
+  transition: opacity $animation-modal;
 }
 .is-hidden {
   opacity: 0;
   pointer-events: none;
-  transition: opacity $animation;
+  transition: opacity $animation-modal;
 }
 .no-scroll {
   overflow: hidden;
@@ -32,12 +32,12 @@
   padding: 60px 30px 20px 20px;
   opacity: 0;
   overflow-y: auto;
-  transition: opacity $animation, transform $animation;
+  transition: opacity $animation-modal, transform $animation-modal;
 
   &.visible {
     opacity: 1;
     transform: translate(-50%, -50%);
-    transition: opacity $animation, transform $animation;
+    transition: opacity $animation-modal, transform $animation-modal;
   }
 
   @media screen and (min-width: 768px) {
