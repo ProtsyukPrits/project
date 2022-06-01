@@ -59,8 +59,14 @@
     border: none;
     background-color: transparent;
 
+    transition: fill $animation;
+
     &-icon {
       fill: #303030;
+      .modal__close-btn:hover &,
+      .modal__close-btn:focus & {
+        fill: $icon-color-accent-light;
+      }
     }
   }
 
