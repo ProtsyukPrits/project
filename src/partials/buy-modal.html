@@ -1,32 +1,50 @@
-<!-- <div class="backdrop" >
-  <div class="modal">
-    <button type="button" class="modal__close-btn close-btn" >
-      <svg class="close-btn__icon" width="11px" height="11px">
-        <use href="./images/icons.svg#icon-close-cross"></use>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal" data-modal-contact>
+    <button type="button" class="modal__close-btn close-btn" data-modal-close1>
+      <svg width="14px" height="14px">
+        <use href="./images/svg/svg_set.svg#icon-close" class="modal__close-btn-icon"></use>
       </svg>
     </button>
-    <h2 class="modal__heading">Оставьте свои данные, мы вам перезвоним</h2>
-    <form class="js-speaker-form contact-form">
+    <h2 class="modal__heading">Please fill out the form in order to finalize your order</h2>
+    <form class="contact-form">
       <div class="contact-form__form-field">
-        <label for="user-name" class="contact-form__label"> Имя </label>
-        <input type="text" name="user-name" class="contact-form__text-field" id="user-name" />
+        <input
+          type="text"
+          name="user-name"
+          class="contact-form__text-field"
+          id="user-name"
+          placeholder=" "
+        />
+        <label for="user-name" class="contact-form__label"> Name </label>
       </div>
       <div class="contact-form__form-field">
-        <label for="user-tel" class="contact-form__label">Телефон</label>
-        <input type="tel" name="user-tel" class="contact-form__text-field" id="user-tel" />
+        <input
+          type="tel"
+          name="user-tel"
+          class="contact-form__text-field"
+          id="user-tel"
+          placeholder=" "
+        />
+        <label for="user-tel" class="contact-form__label">Phone number</label>
       </div>
       <div class="contact-form__form-field">
-        <label for="user-email" class="contact-form__label">Почта</label>
-        <input type="email" name="user-email" class="contact-form__text-field" id="user-email" />
+        <input
+          type="email"
+          name="user-email"
+          class="contact-form__text-field"
+          id="user-email"
+          placeholder=" "
+        />
+        <label for="user-email" class="contact-form__label">Email</label>
       </div>
       <div class="contact-form__form-area">
-        <label for="user-comment" class="contact-form__label">Комментарий</label>
         <textarea
           class="contact-form__comment"
           id="user-comment"
           name="user-comment"
-          placeholder="Введите текст"
+          placeholder=" "
         ></textarea>
+        <label for="user-comment" class="contact-form__label">Comment</label>
       </div>
       <div class="contact-form__form-field">
         <label class="contact-form__label-agreement">
@@ -36,16 +54,115 @@
             class="contact-form__checkbox visually-hidden"
           />
           <svg class="contact-form__icon-checkbox" width="16px" height="15px">
-            <use href=""></use>
+            <use href="./images/svg/svg_set.svg#icon-checkbox"></use>
           </svg>
           <svg class="contact-form__icon-checked" width="16px" height="15px">
-            <use href=""></use>
+            <use href="./images/svg/svg_set.svg#icon-checked"></use>
           </svg>
-          Соглашаюсь с рассылкой и принимаю
-          <a href="" class="agreement-link">Условия договора</a>
+          I agree to the newsletter and accept
+          <a href="" class="agreement-link">contract terms</a>
         </label>
       </div>
-      <button type="submit" class="contact-form__btn-submit btn">Отправить</button>
+      <button type="submit" class="contact-form__btn-submit button__secondary--light">Send</button>
     </form>
   </div>
-</div> -->
+  <div class="modal order-modal" data-modal-order>
+    <button type="button" class="modal__close-btn close-btn" data-modal-close2>
+      <svg width="14px" height="14px">
+        <use href="./images/svg/svg_set.svg#icon-close" class="modal__close-btn-icon"></use>
+      </svg>
+    </button>
+    <h2 class="modal__heading order__heading">Your order</h2>
+    <form class="order-form">
+      <ul class="order-list">
+        <li class="order-list__item">
+          <img
+            srcset="
+              ./images/products/imege_mobail/home-pic3.png    1x,
+              ./images/products/imege_mobail/home-pic3@2x.png 2x
+            "
+            src="./images/products/imege_mobail/home-pic3.png"
+            alt="strawberry icecream"
+            class="order-image"
+          />
+          <div class="order__item-description">
+            <p class="order__item-name">Strawberry ice cream</p>
+            <p class="order__item-price">3.00$</p>
+            <div class="quantity-wrapper">
+              <label class="order__item-label" for="qty_icecream">Quantity:</label>
+              <input
+                class="order__item-input qty"
+                type="number"
+                name="qty_icecream"
+                min="0"
+                id="qty_icecream"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="order-list__item">
+          <img
+            srcset="
+              ./images/products/imege_mobail/home-pic2.png    1x,
+              ./images/products/imege_mobail/home-pic2@2x.png 2x
+            "
+            src="./images/products/imege_mobail/home-pic2.png"
+            alt="vanilla ice coffee"
+            class="order-image"
+          />
+          <div class="order__item-description">
+            <p class="order__item-name">Vanilla ice coffee</p>
+            <p class="order__item-price">3.80$</p>
+            <div class="quantity-wrapper">
+              <label class="order__item-label" for="qty_icecoffee">Quantity:</label>
+              <input
+                class="order__item-input qty"
+                type="number"
+                name="qty_icecoffee"
+                min="0"
+                id="qty_icecoffee"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="order-list__item">
+          <img
+            srcset="
+              ./images/products/imege_mobail/home-pic1.png    1x,
+              ./images/products/imege_mobail/home-pic1@2x.png 2x
+            "
+            src="./images/products/imege_mobail/home-pic1.png"
+            alt="chocolate milkshake"
+            class="order-image"
+          />
+          <div class="order__item-description">
+            <p class="order__item-name">chocolate milkshake</p>
+            <p class="order__item-price">4.50$</p>
+            <div class="quantity-wrapper">
+              <label class="order__item-label" for="qty_milkshake">Quantity:</label>
+              <input
+                class="order__item-input qty"
+                type="number"
+                name="qty_milkshake"
+                min="0"
+                id="qty_milkshake"
+              />
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="order__cost">
+        Total order amount
+        <span class="total-value" id="total-amount">0$</span>
+      </div>
+      <div class="order__btn-wrapper">
+        <button type="button" class="order-calc-btn button__secondary--light" id="count">
+          Count
+        </button>
+        <button type="button" class="order-sub-btn button__secondary--light" data-forward-button>
+          Forward
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

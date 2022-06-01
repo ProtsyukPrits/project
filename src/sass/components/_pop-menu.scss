@@ -23,6 +23,9 @@
     right: 20px;
   }
 }
+.close-btn__icon {
+  fill: $button-color;
+}
 .is-hidden {
   opacity: 0;
   pointer-events: none;

@@ -3,20 +3,115 @@
     <div class="hero__ellipse"></div>
     <picture>
       <source
+        srcset="/images/hero/ice-cream-desktop.webp 1x, /images/hero/ice-cream-desktop@2x.webp 2x"
+        type="image/webp"
+        width="236"
+        height="557"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="/images/hero/ice-cream-desktop.png 1x, /images/hero/ice-cream-desktop@2x.png 2x"
+        type="image/png"
+        width="236"
+        height="557"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="/images/hero/ice-cream-tablet.webp 1x, /images/hero/ice-cream-tablet@2x.webp 2x"
+        type="image/webp"
+        width="143"
+        height="336"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="/images/hero/ice-cream-tablet.png 1x, /images/hero/ice-cream-tablet@2x.png 2x"
+        type="image/png"
+        width="143"
+        height="336"
+        media="(min-width: 768px)"
+      />
+      <source
         srcset="/images/hero/ice-cream-mobile.webp 1x, /images/hero/ice-cream-mobile@2x.webp 2x"
         type="image/webp"
-        media="(max-width: 480px)"
+        width="171"
+        height="410"
       />
       <source
         srcset="/images/hero/ice-cream-mobile.png 1x, /images/hero/ice-cream-mobile@2x.png 2x"
         type="image/png"
-        media="(max-width: 480px)"
+        width="171"
+        height="410"
+      />
+      <img src="/images/hero/ice-cream-mobile.png" alt="ice cream" class="hero__ice-cream-img" />
+    </picture>
+    <picture>
+      <source
+        srcset="/images/hero/so-tasty-desktop.webp 1x, /images/hero/so-tasty-desktop@2x.webp 2x"
+        type="image/webp"
+        width="304"
+        height="241"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="/images/hero/so-tasty-desktop.png 1x, /images/hero/so-tasty-desktop@2x.png 2x"
+        type="image/png"
+        width="304"
+        height="241"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="/images/hero/so-tasty-tablet.webp 1x, /images/hero/so-tasty-tablet@2x.webp 2x"
+        type="image/webp"
+        width="190"
+        height="150"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="/images/hero/so-tasty-tablet.png 1x, /images/hero/so-tasty-tablet@2x.png 2x"
+        type="image/png"
+        width="190"
+        height="150"
+        media="(min-width: 768px)"
       />
       <img
-        src="/images/hero/ice-cream-mobile.png"
-        alt="ice cream"
-        width="171"
-        class="hero__img"
+        src="/images/hero/so-tasty-tablet.png"
+        alt="so tasty ice cream"
+        class="hero__so-tasty-img"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="/images/hero/bio-eco-desktop.webp 1x, /images/hero/bio-eco-desktop@2x.webp 2x"
+        type="image/webp"
+        width="213"
+        height="216"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="/images/hero/bio-eco-desktop.png 1x, /images/hero/bio-eco-desktop@2x.png 2x"
+        type="image/png"
+        width="213"
+        height="216"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="/images/hero/bio-eco-tablet.webp 1x, /images/hero/bio-eco-tablet@2x.webp 2x"
+        type="image/webp"
+        width="152"
+        height="154"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="/images/hero/bio-eco-tablet.png 1x, /images/hero/bio-eco-tablet@2x.png 2x"
+        type="image/png"
+        width="152"
+        height="154"
+        media="(min-width: 768px)"
+      />
+      <img
+        src="/images/hero/bio-eco-tablet.png"
+        alt="bio eco ice cream"
+        class="hero__bio-eco-img"
       />
     </picture>
     <div class="hero__column">
@@ -25,24 +120,41 @@
         <span class="hero__title-accent">passion</span>
       </h1>
       <ul class="hero__nav">
-        <li class="hero__nav-item">
+        <li class="hero__nav-link">
           <a href="#products" title="Products" class="button__secondary--light">Products</a>
         </li>
-        <li class="hero__nav-item">
-          <a href="#about" title="How it’s made?" class="button__secondary--accent">How it’s made?</a>
+        <li class="hero__nav-link">
+          <a href="#about" title="How it’s made?" class="button__secondary--accent">
+            How it’s made?
+          </a>
         </li>
       </ul>
     </div>
+    <div class="hero__info">
+      <h2 class="visually-hidden">bio ice cream</h2>
+      <p class="hero__info-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <button class="hero__info-btn" type="button">
+        <svg width="10" height="5" class="hero__btn-icon">
+          <use href="/images/svg/svg_set.svg#icon-rightarrow"></use>
+        </svg>
+      </button>
+    </div>
     <ul class="hero__statistics">
-      <li class="hero__statistics-column">
-        <p class="hero__counter">16</p>
-        <p class="hero__counter-title">cafes</p>
+      <li class="hero__statistics-meta">
+        <p class="hero__counter">
+          <span class="hero__counter-accent">16</span>
+          cafes
+        </p>
       </li>
-      <li class="hero__statistics-column">
-        <p class="hero__counter">23</p>
-        <p class="hero__counter-title">food trucks</p>
+      <li class="hero__statistics-meta">
+        <p class="hero__counter">
+          <span class="hero__counter-accent">23</span>
+          food trucks
+        </p>
       </li>
     </ul>
   </div>
 </section>
-

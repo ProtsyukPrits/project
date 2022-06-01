@@ -11,11 +11,22 @@
 }
 
 .customer__img {
-    margin: auto;
-    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.customer__content {
+    padding-top: 32px;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 16px;
+        padding-left: 132px;
+        padding-right: 132px;
     }
 }
 
@@ -32,6 +43,13 @@
         background-color: transparent;
         margin-bottom: 0;
     }
+
+    @media screen and (min-width: 1280px) {
+        background-color: $bg-dark-mobile;
+        padding: 32px 105px;
+        margin-bottom: 16px;
+    }
+
 }
 
 .customer__about {
@@ -41,11 +59,16 @@
     width: 180px;
     margin-right: auto;
     margin-left: auto;
-    background: repeating-linear-gradient(#FAFAFA, #FAFAFA 30px, #E1E1E1 30px, #E1E1E1 31px);
+    background: repeating-linear-gradient($bg-dark-mobile, $bg-dark-mobile 30px, $bg-dark 30px, $bg-dark 31px);
 
     @media screen and (min-width: 768px) {
         width: 608px;
-        background: repeating-linear-gradient(#fff, #fff 29px, #E1E1E1 29px, #E1E1E1 30px);
+        background: repeating-linear-gradient($bg-primary, $bg-primary 29px, $bg-dark 29px, $bg-dark 30px);
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 822px;
+        background: repeating-linear-gradient($bg-dark-mobile, $bg-dark-mobile 29px, $bg-dark 29px, $bg-dark 30px);
     }
 
     &:before {
@@ -54,8 +77,8 @@
         content: '';
         height: 40px;
         width: 54px;
-        top: -13px;
-        left: -2px;
+        top: -20px;
+        left: -35px;
         background-image: url('../images/customer-reviews/quotes.svg');
         background-repeat: no-repeat;
         background-size: contain;
@@ -63,7 +86,13 @@
         @media screen and (min-width: 768px) {
             left: 0px;
         }
+
+        @media screen and (min-width: 1280px) {
+
+            left: -10px;
+        }
     }
+
 }
 
 .customer__about-text {
@@ -78,6 +107,13 @@
         font-size: 14px;
         line-height: 2.14;
     }
+
+    @media screen and (min-width: 1280px) {
+        width: 750px;
+        font-size: 16px;
+        line-height: 1.88;
+    }
+
 }
 
 .customer__name {
@@ -89,6 +125,12 @@
         font-size: 16px;
         line-height: 1.86;
     }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 20px;
+        line-height: 1.85;
+    }
+
 
     &::before {
         display: block;
@@ -108,14 +150,14 @@
     width: 12px;
     height: 12px;
     line-height: 20px;
-    background-color: $bg-customer-icon;
+    background-color: $icon-color-accent-dark;
     margin-top: 50px;
 }
 
 .swiper-pagination-bullet:hover {
     width: 12.4px;
     height: 12px;
-    border-radius: 1%;
+    border-radius: 0;
     background-color: transparent;
     background-image: url('../images/customer-reviews/home.svg');
 }
@@ -123,7 +165,7 @@
 .swiper-pagination-bullet-active {
     width: 12.4px;
     height: 12px;
-    border-radius: 1%;
+    border-radius: 0;
     background-color: transparent;
     background-image: url('../images/customer-reviews/home.svg');
 }
@@ -135,5 +177,9 @@
 
     @media screen and (min-width: 768px) {
         margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        top: 32px;
     }
 }

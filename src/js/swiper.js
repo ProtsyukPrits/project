@@ -1,16 +1,35 @@
 new Swiper('.swiper', {
     pagination: {
         el: '.swiper-pagination',
-        clickable:true,
+        clickable: true,
+        dynamicBullets: true,
     },
+    loop: true,
 
-    speed: 1000,
+    grabCursor: true,
 
+    speed: 3000,
+
+    // autoHeight: true,
+
+    initialSlide: 5,
+    
     effect: 'flip',
 
     flipEffect: {
         slideShadows: true,
         limitRotation: true
-    }
+        
+    },
+    
+    autoplay: {
+    delay: 3000,
+    },
 
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: false,
+    },
+    
 });
