@@ -10,7 +10,7 @@ new Swiper('.swiper', {
 
     speed: 3000,
 
-    autoHeight: true,
+    // autoHeight: true,
 
     initialSlide: 5,
     
