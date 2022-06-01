@@ -11,79 +11,98 @@
   }
 
 
-@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-   
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+
     background-image: url(../images/about/about-left-450x2.png),
       url(../images/about/about-right-450x2.png);
   }
 
 
-// __________++++++
-@media screen and (min-width: 1280px) {
-  background-image: url(../images/about/about-left-1280x1.png),
-    url(../images/about/about-right-1280x1.png);
-     background-repeat: no-repeat, no-repeat;
+  // __________++++++
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/about/about-left-1280x1.png),
+      url(../images/about/about-right-1280x1.png);
+    background-repeat: no-repeat, no-repeat;
     background-position: 0% 40%, 100% 95%;
 
-  @media (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      
-    background-image: url(../images/about/about-left-1280x2.png),url(../images/about/about-right-1280x2.png);
-}
-}
-}
 
-.about__wrapper {
-  margin-bottom: 32px;
-
-  @media screen and (min-width: 768px) {
-    font-size: 48px;
-    line-height: 1.14;
-    margin-bottom: 40px;
+      background-image: url(../images/about/about-left-1280x2.png), url(../images/about/about-right-1280x2.png);
+    }
   }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 60px;
-  }
-
-  margin-left: auto;
-  margin-right: auto;
 }
+
+// .about__wrapper {
+//   margin-bottom: 32px;
+
+//   @media screen and (min-width: 768px) {
+//     font-size: 48px;
+//     line-height: 1.14;
+//     margin-bottom: 40px;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     margin-bottom: 60px;
+//   }
+// }
 
 .about__title {
+  margin-bottom: 15px;
+
   font-family: $secondary-font-family;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   font-size: 18px;
   line-height: 1.16;
-  margin-bottom: 15px;
+
   color: $text-color-accent-light;
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
     font-size: 26px;
     line-height: 1.15;
-    margin-bottom: 16px;
   }
 
   @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
     font-size: 30px;
     line-height: 1.13;
-    margin-bottom: 16px;
+    letter-spacing: 0.04em;
   }
 }
 
 .about__subtitle {
+
+  margin-bottom: 32px;
+
   font-family: $secondary-font-family;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   font-size: 34px;
   line-height: 1.14;
+  letter-spacing: 0.04em;
 
   color: $text-color-accent;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    font-size: 48px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 60px;
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
 }
 
 .about__block {
