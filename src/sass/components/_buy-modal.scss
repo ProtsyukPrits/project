@@ -127,19 +127,19 @@
 .order-modal {
   transform: translate(-50%, -50%);
   opacity: 1;
-  transition: opacity $animation, transform $animation;
+  transition: opacity $animation-modal, transform $animation-modal;
 
   .backdrop.is-hidden & {
     transform: translate(250%, 250%);
     opacity: 0;
-    transition: opacity $animation, transform $animation;
+    transition: opacity $animation-modal, transform $animation-modal;
   }
 
   &.not-visible {
     pointer-events: none;
     opacity: 0;
     transform: translate(-300%, -300%);
-    transition: opacity $animation, transform $animation;
+    transition: opacity $animation-modal, transform $animation-modal;
   }
 }
 .order__heading {
