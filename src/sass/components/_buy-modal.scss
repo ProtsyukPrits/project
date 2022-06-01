@@ -86,6 +86,8 @@
 .contact-form__icon-checkbox {
   position: absolute;
   left: 0;
+  top: calc(18.228px / 2);
+  transform: translateY(-50%);
 
   opacity: 1;
 
