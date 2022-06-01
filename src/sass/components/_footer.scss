@@ -128,13 +128,10 @@
     background-color: $networks-color;
     border-radius: 50%;
 
-    &:hover {
+    &:hover, &:focus {
         background-color: $networks-color-hover;
     }
 
-    &:focus {
-        background-color: $networks-color-hover;
-    }
 
     transition: background-color $animation;
 
@@ -150,7 +147,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    line-height: 186%;
+    line-height: 1.86;
     letter-spacing: 0.02em;
 
     color: $text-color-primary;
@@ -184,14 +181,14 @@
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 186%;
+    line-height: 1.86;
     text-align: center;
 
     color: $text-color-dark;
 
     @media screen and (max-width: 767px) {
         width: 145px;
-        line-height: 152%;
+        line-height: 1.52;
     }
 
     @media screen and (min-width: 767px) and (max-width: 1280px) {
