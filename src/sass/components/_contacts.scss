@@ -73,13 +73,6 @@
        }
 }
 
-.contacts__box{
-    padding-bottom: 24px;
-    border-bottom: 1px solid $border-color-light;
-    @media screen and (min-width: 768px) {
-        padding-bottom: 32px;   
-    }
-}
 .contacts__caption {
     margin-bottom: 8px;
     letter-spacing: 0.04em;
@@ -95,13 +88,16 @@
 }
 
 .contacts__text{
-   
+    padding-bottom: 24px;
+    border-bottom: 1px solid $border-color-light;
     @include family-vr(null, 500, 12px, 18px);
     color: $text-color-dark;
     @media screen and (min-width: 768px) and (max-width: 1279.99px){
+        padding-bottom: 32px;
         @include family-vr(null, 500, 14px, 1.66); 
         }
     @media screen and (min-width: 1280px) {
+        padding-bottom: 32px;
         max-width: 243px;
         @include family-vr(null, 500, 16px, 1.83); 
         }     
@@ -136,9 +132,9 @@
 }
  
 .callback{
-    padding-top: 24px;
+    margin-top: 24px;
     @media screen and (min-width: 768px) {
-        padding-top: 32px;
+        margin-top: 32px;
     }
 }
 .callback__link{
