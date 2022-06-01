@@ -7,9 +7,9 @@
     openChicagoBtn: document.querySelector('[data-chicago-open]'),
     openLosAngelesBtn: document.querySelector('[data-losangeles-open]'),
     openNewYorkBtn: document.querySelector('[data-newyork-open]'),
-    chicago: document.querySelector('[chicago]'),
-    losAngeles: document.querySelector('[losangeles]'),
-    NewYork: document.querySelector('[newyork]'),
+    chicago: document.querySelector('[data-chicago]'),
+    losAngeles: document.querySelector('[data-losangeles]'),
+    NewYork: document.querySelector('[data-newyork]'),
   };
 
   refs.openMapsBtn.addEventListener('click', toggleMaps);
