@@ -10,10 +10,6 @@
     @media screen and (min-width: 768px) and (max-width: 1279.98px) {
         width: 527px;
     }
-
-    @media screen and (min-width: 1280px) {
-        justify-content: space-between;
-    }
 }
 
 .advantages__item {
@@ -25,7 +21,7 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1279.98px) {
         &:not(:last-child) {
             margin-right: 4px;
         }
@@ -33,7 +29,7 @@
 
     @media screen and (min-width: 1280px) {
         width: 288px;
-        margin-right: 118px;
+        margin-right: 115px;
     }
 
     &:first-child::before {
