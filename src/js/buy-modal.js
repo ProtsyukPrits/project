@@ -4,11 +4,11 @@
     openModalBtn2: document.querySelector('[data-modal-open2]'),
     closeModalBtn1: document.querySelector('[data-modal-close1]'),
     closeModalBtn2: document.querySelector('[data-modal-close2]'),
-    forwardModalBtn: document.querySelector('[forward-button]'),
+    forwardModalBtn: document.querySelector('[data-forward-button]'),
     modal: document.querySelector('[data-modal]'),
     body: document.querySelector('body'),
-    modalOrder: document.querySelector('[modal-order]'),
-    modalContact: document.querySelector('[modal-contact]'),
+    modalOrder: document.querySelector('[data-modal-order]'),
+    modalContact: document.querySelector('[data-modal-contact]'),
   };
 
   refs.openModalBtn1.addEventListener('click', toggleModal);
