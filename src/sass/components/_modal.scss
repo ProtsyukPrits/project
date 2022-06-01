@@ -39,6 +39,11 @@
     transform: translate(-50%, -50%);
     transition: opacity $animation-modal, transform $animation-modal;
   }
+  .backdrop.is-hidden & {
+    transform: translate(250%, 250%);
+    opacity: 0;
+    transition: opacity $animation-modal, transform $animation-modal;
+  }
 
   @media screen and (min-width: 768px) {
     max-width: 80vw;
